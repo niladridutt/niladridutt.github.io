@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Go on Niladri Shekhar Dutt</title>
+    <link>https://niladridutt.github.io/fr/categories/go/</link>
+    <description>Recent content in Go on Niladri Shekhar Dutt</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Wed, 02 Apr 2014 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://niladridutt.github.io/fr/categories/go/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Introduction aux modèles (Hu)go</title>
+      <link>https://niladridutt.github.io/fr/posts/2014/04/introduction-aux-mod%C3%A8les-hugo/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://niladridutt.github.io/fr/posts/2014/04/introduction-aux-mod%C3%A8les-hugo/</guid>
+      <description>Hugo utilise l&#39;excellente librairie go html/template pour son moteur de modèles. c&#39;est un moteur extrêmement léger qui offre un très petit nombre de fonctions logiques. À notre expérience, c&#39;est juste ce qu&#39;il faut pour créer un bon site web statique. Si vous avez déjà utilisé d&#39;autre moteurs de modèles pour différents langages ou frameworks, vous allez retrouver beaucoup de similitudes avec les modèles go.
+Ce document est une introduction sur l&#39;utilisation de Go templates.</description>
+    </item>
+    
+  </channel>
+</rss>
