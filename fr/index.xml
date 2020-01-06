@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Niladri Shekhar Dutt</title>
-    <link>https://niladridutt.github.io/fr/</link>
+    <link>https://niladridutt.com/fr/</link>
     <description>Recent content on Niladri Shekhar Dutt</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
     <lastBuildDate>Sun, 28 Sep 2014 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://niladridutt.github.io/fr/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://niladridutt.com/fr/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Création d&#39;un nouveau thème</title>
-      <link>https://niladridutt.github.io/fr/posts/2014/09/cr%C3%A9ation-dun-nouveau-th%C3%A8me/</link>
+      <link>https://niladridutt.com/fr/posts/2014/09/cr%C3%A9ation-dun-nouveau-th%C3%A8me/</link>
       <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://niladridutt.github.io/fr/posts/2014/09/cr%C3%A9ation-dun-nouveau-th%C3%A8me/</guid>
+      <guid>https://niladridutt.com/fr/posts/2014/09/cr%C3%A9ation-dun-nouveau-th%C3%A8me/</guid>
       <description>Introduction Ce tutoriel vous montrera comment créer un thème simple pour Hugo. Je suppose que vous êtes familier avec HTML, la ligne de commande bash, et que vous êtes à l&#39;aise avec Markdown pour formater le contenu. Je vais expliquer comment Hugo utilise des modèles et comment vous pouvez organiser vos modèles pour créer un thème. Je ne couvrirai pas l&#39;utilisation de CSS pour styliser votre thème.
 Nous allons commencer par créer un nouveau site avec un modèle très basique.</description>
     </item>
     
     <item>
       <title>Débuter avec Hugo</title>
-      <link>https://niladridutt.github.io/fr/posts/2014/04/d%C3%A9buter-avec-hugo/</link>
+      <link>https://niladridutt.com/fr/posts/2014/04/d%C3%A9buter-avec-hugo/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://niladridutt.github.io/fr/posts/2014/04/d%C3%A9buter-avec-hugo/</guid>
+      <guid>https://niladridutt.com/fr/posts/2014/04/d%C3%A9buter-avec-hugo/</guid>
       <description>&lt;h2 id=&#34;étape-1-installer-hugo&#34;&gt;Étape 1. Installer Hugo&lt;/h2&gt;
 &lt;p&gt;Allez sur la page de téléchargements de
 &lt;a href=&#34;https://github.com/spf13/hugo/releases&#34; target=&#34;_blank&#34;&gt;hugo&lt;/a&gt; et téléchargez la version
@@ -34,25 +34,25 @@ appropriée à votre système d&#39;exploitation et votre architecture.&lt;/p&gt
 &lt;p&gt;Sauvegardez le fichier téléchargé à un endroit précis, afin de l&#39;utiliser dans
 l&#39;étape suivante.&lt;/p&gt;
 &lt;p&gt;Des informations plus complètes sont disponibles sur la page
-&lt;a href=&#34;https://niladridutt.github.io/overview/installing/&#34;&gt;installing hugo&lt;/a&gt;&lt;/p&gt;</description>
+&lt;a href=&#34;https://niladridutt.com/overview/installing/&#34;&gt;installing hugo&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Introduction aux modèles (Hu)go</title>
-      <link>https://niladridutt.github.io/fr/posts/2014/04/introduction-aux-mod%C3%A8les-hugo/</link>
+      <link>https://niladridutt.com/fr/posts/2014/04/introduction-aux-mod%C3%A8les-hugo/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://niladridutt.github.io/fr/posts/2014/04/introduction-aux-mod%C3%A8les-hugo/</guid>
+      <guid>https://niladridutt.com/fr/posts/2014/04/introduction-aux-mod%C3%A8les-hugo/</guid>
       <description>Hugo utilise l&#39;excellente librairie go html/template pour son moteur de modèles. c&#39;est un moteur extrêmement léger qui offre un très petit nombre de fonctions logiques. À notre expérience, c&#39;est juste ce qu&#39;il faut pour créer un bon site web statique. Si vous avez déjà utilisé d&#39;autre moteurs de modèles pour différents langages ou frameworks, vous allez retrouver beaucoup de similitudes avec les modèles go.
 Ce document est une introduction sur l&#39;utilisation de Go templates.</description>
     </item>
     
     <item>
       <title>Migrer vers Hugo depuis Jekyll</title>
-      <link>https://niladridutt.github.io/fr/posts/2014/03/migrer-vers-hugo-depuis-jekyll/</link>
+      <link>https://niladridutt.com/fr/posts/2014/03/migrer-vers-hugo-depuis-jekyll/</link>
       <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://niladridutt.github.io/fr/posts/2014/03/migrer-vers-hugo-depuis-jekyll/</guid>
+      <guid>https://niladridutt.com/fr/posts/2014/03/migrer-vers-hugo-depuis-jekyll/</guid>
       <description>&lt;h2 id=&#34;déplacez-le-contenu-statique-vers-static&#34;&gt;Déplacez le contenu statique vers &lt;code&gt;static&lt;/code&gt;&lt;/h2&gt;
 &lt;p&gt;Jekyll a une règle comme quoi tout répertoire qui ne commence pas par &lt;code&gt;_&lt;/code&gt; sera
 copié tel-quel dans le répertoire &lt;code&gt;_site&lt;/code&gt;. Hugo garde tout le contenu statique
