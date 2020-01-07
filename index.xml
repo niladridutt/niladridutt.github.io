@@ -38,8 +38,7 @@ We&#39;ll start with creating a new site with a very basic template.</descriptio
       <pubDate>Mon, 06 Jan 2020 00:00:00 +0000</pubDate>
       
       <guid>https://niladridutt.com/about/</guid>
-      <description>&amp;gt; Hello world!    I&#39;m fascinated by AI and I like building architectures that exhibit “intelligence” and deploy novel models to solve real world problems. My research interests lie in the field of Deep Learning and its applications in Computer Vision and NLP, and fairness in Machine Learning.
- Updates  I recently received a travel grant to deliver a talk at PyCon Taiwan&amp;#39;19 on &amp;lsquo;Probabilistic Programming using TensorFlow Probability&amp;rsquo; (September 21, 2019) Won the &amp;lsquo;Best Social Hack&amp;rsquo; at LA Hacks 2019 hosted by UCLA (Major League HAcking) Won the 2nd Runners-up award at San Francisco (SF) Hacks 2019 (Major League Hacking) Won the &amp;lsquo;Best Utility Hack&amp;rsquo; at DeveloperWeek Hackathon 2019 (America&#39;s largest challenge driven hackathon)  When I don&#39;t code &amp;lt;/&amp;gt;, I write snippets.</description>
+      <description>// &amp;gt; Hello world! // class Tldr(nn.Module): def __init__(self): super(Tldr, self).__init__() self.params = nn.ParameterDict({ &amp;#39;name&amp;#39; : &amp;#39;Niladri Shekhar Dutt&amp;#39;, &amp;#39;education&amp;#39; : &amp;#39;UC Berkeley, SRM University (Chennai)&amp;#39;, &amp;#39;is a&amp;#39; : &amp;#39;Researcher, Developer, Hacker&amp;#39;, &amp;#39;researched at&amp;#39; : &amp;#39;Nvidia, CITRIS Policy Lab, UC Berkeley, IIT Kharagpur&amp;#39;, &amp;#39;research interests&amp;#39; : &amp;#39;fairness in machine learning, deep learning, computer vision&amp;#39; &amp;#39;loves to&amp;#39; : &amp;#39;hack, binge watch, listen to alternative rock&amp;#39;, &amp;#39;speaks&amp;#39; : &amp;#39;English, Bengali, Hindi, German (kinda)&amp;#39;, &amp;#39;travelled to&amp;#39; : &amp;#39;USA, England, Taiwan, Republic of Ireland, Northern Ireland, Kenya, India&amp;#39;, &amp;#39;can be found on&amp;#39; : &amp;#39;Instagram, Twitter, Github, LinkedIn&amp;#39;, &amp;#39;interests&amp;#39; : &amp;#39;technology, music, reading, guitar&amp;#39;, })  I&#39;m fascinated by AI and I like building architectures that exhibit “intelligence” and deploy novel models to solve real world problems.</description>
     </item>
     
     <item>
@@ -50,9 +49,19 @@ We&#39;ll start with creating a new site with a very basic template.</descriptio
       <guid>https://niladridutt.com/experience/</guid>
       <description>Nvidia Corporation
 Research Intern | Jan 2020 - Present
- Working on fairness in computer vision systems   CITRIS Policy Lab, UC Berkeley
+  Working on fairness in computer vision systems  
+ CITRIS Policy Lab, UC Berkeley
 Undergraduate researcher | Supervisor : Dr.Brandie Nonnecke | Feb 2019 - Present
- Using machine learning to find how political tweets propagate and inuence elections. Improved topic coherence by using topic modeling after clustering based on social network analysis Presented research to senators in Washington, D.</description>
+  Using machine learning to find how political tweets propagate and inuence elections. Improved topic coherence by using topic modeling after clustering based on social network analysis Presented research to senators in Washington, D.</description>
+    </item>
+    
+    <item>
+      <title>Heyyy Ruu!</title>
+      <link>https://niladridutt.com/ruuuu/</link>
+      <pubDate>Mon, 06 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://niladridutt.com/ruuuu/</guid>
+      <description> // &amp;gt; Hi there Bestestest TM! &amp;gt; I &amp;lt;3 you Ruu // </description>
     </item>
     
     <item>
@@ -113,23 +122,6 @@ Follow the following steps:
       <guid>https://niladridutt.com/posts/2014/04/introduction-aux-mod%C3%A8les-hugo/</guid>
       <description>Hugo utilise l&#39;excellente librairie go html/template pour son moteur de modèles. c&#39;est un moteur extrêmement léger qui offre un très petit nombre de fonctions logiques. À notre expérience, c&#39;est juste ce qu&#39;il faut pour créer un bon site web statique. Si vous avez déjà utilisé d&#39;autre moteurs de modèles pour différents langages ou frameworks, vous allez retrouver beaucoup de similitudes avec les modèles go.
 Ce document est une introduction sur l&#39;utilisation de Go templates.</description>
-    </item>
-    
-    <item>
-      <title>Migrer vers Hugo depuis Jekyll</title>
-      <link>https://niladridutt.com/posts/2014/03/migrer-vers-hugo-depuis-jekyll/</link>
-      <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://niladridutt.com/posts/2014/03/migrer-vers-hugo-depuis-jekyll/</guid>
-      <description>&lt;h2 id=&#34;déplacez-le-contenu-statique-vers-static&#34;&gt;Déplacez le contenu statique vers &lt;code&gt;static&lt;/code&gt;&lt;/h2&gt;
-&lt;p&gt;Jekyll a une règle comme quoi tout répertoire qui ne commence pas par &lt;code&gt;_&lt;/code&gt; sera
-copié tel-quel dans le répertoire &lt;code&gt;_site&lt;/code&gt;. Hugo garde tout le contenu statique
-dans le répertoire &lt;code&gt;static&lt;/code&gt;. Vous devez donc déplacer tout ce type de contenu
-là-dedans. Avec Jekylll, l&#39;arborescence ressemblant à ceci :&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;▾ &amp;lt;root&amp;gt;/
-    ▾ images/
-        logo.png
-&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     
   </channel>
