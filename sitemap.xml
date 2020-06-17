@@ -18,6 +18,11 @@
   </url>
   
   <url>
+    <loc>https://niladridutt.com/contact/</loc>
+    <lastmod>2020-01-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://niladridutt.com/experience/</loc>
     <lastmod>2020-01-06T00:00:00+00:00</lastmod>
   </url>
@@ -88,12 +93,12 @@
   </url>
   
   <url>
-    <loc>https://niladridutt.com/tags/golang/</loc>
+    <loc>https://niladridutt.com/categories/golang/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://niladridutt.com/categories/golang/</loc>
+    <loc>https://niladridutt.com/tags/golang/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
   </url>
   
