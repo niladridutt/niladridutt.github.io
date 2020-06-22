@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="map[name:Niladri Shekhar Dutt]">
+<meta name="description" content="Deep neural networks have been highly successful at a number of tasks; this paper takes a step back and looks at why such deep architectures have been successful. In deep neural networks more often than not, we have far more trainable parameters than the number of training examples and for some reason they seem to generalize very well despite violating the conventional rules of statistical learning. This paper seeks to understand generalization at a very fundamental level and tries to answer what causes a neural network to go beyond memorising labels and actually build intuitions about the underlying patterns in the data." />
+<meta name="keywords" content="Niladri Shekhar Dutt" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="#252627" />
+<link rel="canonical" href="https://niladridutt.com/posts/2020/06/understanding-deep-learning-requires-rethinking-generalization-a-discussion/" />
+
+
+    <title>
+        
+            Understanding deep learning requires rethinking generalization - A discussion :: Niladri Shekhar Dutt  — Hello world!
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="https://niladridutt.com/main.min.263914139ec15f76bc0c782d11d1d45ac1d9e2dd91e188f1c01b12a541ac27e8.css">
+
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="https://niladridutt.com/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://niladridutt.com/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://niladridutt.com/favicon-16x16.png">
+    <link rel="manifest" href="https://niladridutt.com/site.webmanifest">
+    <link rel="mask-icon" href="https://niladridutt.com/safari-pinned-tab.svg" color="#252627">
+    <link rel="shortcut icon" href="https://niladridutt.com/favicon.ico">
+    <meta name="msapplication-TileColor" content="#252627">
+    <meta name="theme-color" content="#252627">
+
+<meta itemprop="name" content="Understanding deep learning requires rethinking generalization - A discussion">
+<meta itemprop="description" content="Deep neural networks have been highly successful at a number of tasks; this paper takes a step back and looks at why such deep architectures have been successful. In deep neural networks more often than not, we have far more trainable parameters than the number of training examples and for some reason they seem to generalize very well despite violating the conventional rules of statistical learning. This paper seeks to understand generalization at a very fundamental level and tries to answer what causes a neural network to go beyond memorising labels and actually build intuitions about the underlying patterns in the data.">
+<meta itemprop="datePublished" content="2020-06-21T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2020-06-21T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="571">
+<meta itemprop="image" content="https://niladridutt.com/"/>
+
+
+
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://niladridutt.com/"/>
+
+<meta name="twitter:title" content="Understanding deep learning requires rethinking generalization - A discussion"/>
+<meta name="twitter:description" content="Deep neural networks have been highly successful at a number of tasks; this paper takes a step back and looks at why such deep architectures have been successful. In deep neural networks more often than not, we have far more trainable parameters than the number of training examples and for some reason they seem to generalize very well despite violating the conventional rules of statistical learning. This paper seeks to understand generalization at a very fundamental level and tries to answer what causes a neural network to go beyond memorising labels and actually build intuitions about the underlying patterns in the data."/>
+
+
+
+
+
+    <meta property="article:published_time" content="2020-06-21 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+    </head>
+
+    <body class="dark-theme">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="https://niladridutt.com/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">$ cd /home/niladri</span>
+            <span class="logo__cursor" style="background-color:#49f2ae"></span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://niladridutt.com/about/">About</a></li><li><a href="https://niladridutt.com/posts/">Blog</a></li><li><a href="https://niladridutt.com/contact">Contact</a></li><li><a href="https://niladridutt.com/experience/">Experience</a></li><li><a href="https://niladridutt.com/">Home</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>3 minutes
+
+            
+
+            </p>
+        </div>
+
+        <article>
+            <h1 class="post-title">
+                <a href="https://niladridutt.com/posts/2020/06/understanding-deep-learning-requires-rethinking-generalization-a-discussion/">Understanding deep learning requires rethinking generalization - A discussion</a>
+            </h1>
+
+            
+
+            <div class="post-content">
+                <p>Deep neural networks have been highly successful at a number of tasks; this paper takes a step back and looks at why such deep architectures have been successful. In deep neural networks more often than not, we have far more trainable parameters than the number of training examples and for some reason they seem to generalize very well despite violating the conventional rules of statistical learning. This paper seeks to understand generalization at a very fundamental level and tries to answer what causes a neural network to go beyond memorising labels and actually build intuitions about the underlying patterns in the data.</p>
+<p>In the first experiment, to probe this question, the authors do something quite interesting - they switch the labels in the training data to be completely random. At first this does not make sense but what’s really interesting is the fact that in spite of being trained on completely random data, the network achieves zero training error. Next they kept the labels the same but replaced the images with completely random pixels and yet again we see zero error during training. The authors argue that the effective capacity of large networks makes it possible to memorise even large datasets like CIFAR-10 since changing the labels to be random is essentially a data transformation.</p>
+<br>
+<p><img src="../../../../img/understanding-deep-learning-fig-1.jpeg" alt=""></p>
+<br>
+<p>Another notable finding is that when trained with partially corrupted labels, deeper networks had better test accuracy. The only qualm I have here is that the authors did not address the problem of overfitting well enough here.</p>
+<p>The authors then discuss how neural networks have implicit regularization at play since even without explicit regularization methods like dropout and weight decay, neural networks are still able to achieve good enough generalization. Therefore, regularization can’t be the fundamental reason behind generalization.</p>
+<br>
+<p><img src="../../../../img/understanding-deep-learning-fig-2.jpeg" alt=""></p>
+<br>
+The authors conclude that effective capacity of deep neural networks are large enough to memorize data. Essentially neural networks are excellent to memorize input-output relationships. Yoshua Bengio et al in their paper “A Closer Look at Memorization in Deep Networks” explore this line of thought further. They find that at first neural networks identify simple patterns by exploiting training examples which have an easier input-output mapping. Once these simple patterns are identified, the neural networks start to memorize the dataset to completely overfit on the dataset. A similar line of work by Schwartz-Ziv and Tishby (“Opening the black box of Deep Neural Networks via Information”) try to explain some of these intuitions using information theory which I found quite interesting. They try to find how much mutual information is present at every activation layer. A truly remarkable insight which they present in their paper is about the training process of neural networks. In the first phase of the training process the network gains information about the label and the input. During the second phase, the network keeps gaining more information about the label but starts to lose information about the input which are irrelevant. This second phase which is much slower regularizes the network. 
+<p><br><br></p>
+<center><img src = "../../../../img/ib-dnn-fig-1.jpeg"></center>
+<br>
+<p><img src="../../../../img/9-Figure2-1.png" alt=""></p>
+<br>
+What really intrigued me in this paper by Zhang et al are the questions that the authors are asking which has led to a lot of interesting line of research. A recent paper by Chollet “On the Measure of Intelligence” talks about the need for a more definitive way to evaluate “intelligence” if we are to move towards AGI. I think understanding generalization at a fundamental level is the key to unlocking AGI.
+<p><br><br></p>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>571 Words</p>
+
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2020-06-21 05:30 &#43;0530</p>
+        </div>
+
+        
+            <div class="pagination">
+                <div class="pagination__title">
+                    <span class="pagination__title-h"></span>
+                    <hr />
+                </div>
+
+                <div class="pagination__buttons">
+                    
+
+                    
+                        <span class="button next">
+                            <a href="https://niladridutt.com/posts/2019/06/a-hackers-guide-to-winning-hackathons/">
+                                <span class="button__text">A Hacker’s Guide to Winning Hackathons</span>
+                                <span class="button__icon">→</span>
+                            </a>
+                        </span>
+                    
+                </div>
+            </div>
+        
+
+        
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2020</span>
+            
+                <span><a href="https://niladridutt.com/">Niladri Shekhar Dutt</a></span>
+            
+            
+            <span> <a href="https://niladridutt.com/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>Made with <a style="color:Aquamarine;">&#10084;</a> by Niladri</span>
+        </div>
+    </div>
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="https://niladridutt.com/bundle.min.6ee2e67759e6af60e701b8b8a2e805008a897398e8ececd6ef7cfc09903742f4604da2ac47df241a83124f8fea4501cb459b811770d6f826a61e99db9ca60f92.js" integrity="sha512-buLmd1nmr2DnAbi4ougFAIqJc5jo7OzW73z8CZA3QvRgTaKsR98kGoMST4/qRQHLRZuBF3DW&#43;CamHpnbnKYPkg=="></script>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-141901439-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+
+
+    </body>
+</html>
