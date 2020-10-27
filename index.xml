@@ -37,7 +37,9 @@
       <pubDate>Mon, 06 Jan 2020 00:00:00 +0000</pubDate>
       
       <guid>https://niladridutt.com/about/</guid>
-      <description>I&#39;m currently working on launching an applied AI/ML/DL specialization on Coursera with UC Berkeley, Google and Perceptilabs. Previously, I have had the good fortune of working with Dr.Brandie Nonnecke at UC Berkeley at the intersection of machine learning and social network analysis where our work was presented to senators in Washington D.C. In the past, I have spent time as a research intern at Nvidia and CNeRG, IIT Kharagpur.</description>
+      <description>I&#39;m a Data Scientist at Sentinel where I help governments and organizations defend against deep fakes and information warfare by developing intelligent systems and architectures to automatically detect AI generated and manipulated media.
+I&#39;m also working on launching an applied AI/ML/DL specialization on Coursera with UC Berkeley, Google and Perceptilabs.
+Previously, I have had the good fortune of working with Dr.Brandie Nonnecke at UC Berkeley at the intersection of machine learning and social network analysis where our work was presented to senators in Washington D.</description>
     </item>
     
     <item>
@@ -59,12 +61,12 @@ Schedule a 30 min meeting with me</description>
       <pubDate>Mon, 06 Jan 2020 00:00:00 +0000</pubDate>
       
       <guid>https://niladridutt.com/experience/</guid>
-      <description>Nvidia Corporation
-Research Intern | Jan 2020 - Present
-  Working on fairness in computer vision systems  
- CITRIS Policy Lab, UC Berkeley
-Undergraduate researcher | Supervisor : Dr.Brandie Nonnecke | Feb 2019 - Present
-  Using machine learning to find how political tweets propagate and inuence elections. Improved topic coherence by using topic modeling after clustering based on social network analysis Presented research to senators in Washington, D.</description>
+      <description>Sentinel
+Data Scientist | Oct 2020 - Present
+  Helping governments and organizations defend against deep fakes and information warfare by developing intelligent systems and architectures to automatically detect AI generated and manipulated media  
+ Nvidia Corporation
+Research Intern | Jan 2020 - Jun 2020
+  Researched on the characteristics and properties of distributions which aect the training of Generative Adversarial Networks. Explored various distributions, modalities, latent space, etc to discover traits which affect the training process.</description>
     </item>
     
   </channel>
