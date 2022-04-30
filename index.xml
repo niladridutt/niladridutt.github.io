@@ -33,8 +33,9 @@
       <pubDate>Mon, 06 Jan 2020 00:00:00 +0000</pubDate>
       
       <guid>https://niladridutt.com/about/</guid>
-      <description>I&amp;rsquo;m a Data Scientist at Sentinel where I help governments and organizations defend against deep fakes and information warfare by developing intelligent systems and architectures to automatically detect AI generated and manipulated media.
-Previously, I have had the good fortune of working with Dr.Brandie Nonnecke at UC Berkeley at the intersection of machine learning and social network analysis. I have also spent time as a research intern at Nvidia and IIT Kharagpur.</description>
+      <description>I&amp;rsquo;m a Data Scientist at NFTPort where I lead AI x blockchain services to build enhanced APIs for NFTs.
+Previously, I have had the good fortune of working with Dr.Brandie Nonnecke at UC Berkeley at the intersection of machine learning and social network analysis. I have also spent time as a research intern at Nvidia and IIT Kharagpur.
+If you&amp;rsquo;re starting your journey in machine learning, check this roadmap I maintain.</description>
     </item>
     
     <item>
@@ -43,7 +44,7 @@ Previously, I have had the good fortune of working with Dr.Brandie Nonnecke at U
       <pubDate>Mon, 06 Jan 2020 00:00:00 +0000</pubDate>
       
       <guid>https://niladridutt.com/contact/</guid>
-      <description>E-mail : niladri@nyu.edu | niladrishekhardutt@gmail.com
+      <description>E-mail : niladrishekhardutt@gmail.com
 GitHub : niladridutt
 Twitter : @dutt_niladri
 LinkedIn : niladridutt
@@ -56,12 +57,12 @@ Schedule a 30 min meeting with me</description>
       <pubDate>Mon, 06 Jan 2020 00:00:00 +0000</pubDate>
       
       <guid>https://niladridutt.com/experience/</guid>
-      <description>Sentinel
+      <description>NFTPort
 Data Scientist | Oct 2020 - Present
-  Helping governments and organizations defend against deep fakes and information warfare by developing intelligent systems and architectures to automatically detect AI generated and manipulated media  
+  I lead AI x blockchain services to build enhanced APIs for NFTs. Developed core functionalties like NFT search, duplicate detection, recommendation engine from scratch. Maintain core API design and RESTful practices in an API-first company.  
  Nvidia Corporation
 Research Intern | Jan 2020 - Jun 2020
-  Researched on the characteristics and properties of distributions which affect the training of Generative Adversarial Networks. Explored various distributions, modalities, latent space, etc to discover traits which affect the training process.</description>
+  Researched how regularity affects learning in GANs by studying modelling on synthetic data.</description>
     </item>
     
   </channel>
