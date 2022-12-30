@@ -1,68 +1,23 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Niladri Shekhar Dutt</title>
-    <link>https://niladridutt.com/</link>
-    <description>Recent content on Niladri Shekhar Dutt</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Sun, 21 Jun 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://niladridutt.com/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Understanding deep learning requires rethinking generalization - A discussion</title>
-      <link>https://niladridutt.com/posts/2020/06/understanding-deep-learning-requires-rethinking-generalization-a-discussion/</link>
-      <pubDate>Sun, 21 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://niladridutt.com/posts/2020/06/understanding-deep-learning-requires-rethinking-generalization-a-discussion/</guid>
-      <description>Deep neural networks have been highly successful at a number of tasks; this paper takes a step back and looks at why such deep architectures have been successful. In deep neural networks more often than not, we have far more trainable parameters than the number of training examples and for some reason they seem to generalize very well despite violating the conventional rules of statistical learning. This paper seeks to understand generalization at a very fundamental level and tries to answer what causes a neural network to go beyond memorising labels and actually build intuitions about the underlying patterns in the data.</description>
-    </item>
+    <title>Niladri Dutt</title>
+    <link>/</link>
+      <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <description>Niladri Dutt</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language>
+    <image>
+      <url>/media/icon_hu3bb6902580fde14aba70c126201fb354_37580_512x512_fill_lanczos_center_3.png</url>
+      <title>Niladri Dutt</title>
+      <link>/</link>
+    </image>
     
     <item>
-      <title>A Hacker’s Guide to Winning Hackathons</title>
-      <link>https://niladridutt.com/posts/2019/06/a-hackers-guide-to-winning-hackathons/</link>
-      <pubDate>Tue, 18 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://niladridutt.com/posts/2019/06/a-hackers-guide-to-winning-hackathons/</guid>
-      <description>Hackathons are exhilarating. Nothing can eclipse the sheer adrenaline pump of building something in 24–36 hours. I was a visiting student at UC Berkeley for the Spring’19 semester. Berkeley is really close to the Silicon Valley and that gave me an amazing opportunity to take part in and win these 3 amazing hackathons:
-  LA Hacks ’19 hosted by UCLA
-  San Francisco DeveloperWeek Hackathon ’19 (America’s largest challenge-driven hackathon)</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>https://niladridutt.com/about/</link>
-      <pubDate>Fri, 19 Aug 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://niladridutt.com/about/</guid>
-      <description>I&amp;rsquo;m currently pursuing MSc in Computer Vision at UCL (University College London). Previously, I led machine learning at NFTPort from its inception through its Series A of $26M.
-Prior to that, I worked with Dr.Brandie Nonnecke at UC Berkeley at the intersection of machine learning and social network analysis. I have also spent time as a research intern at Nvidia and IIT Kharagpur.
-If you&amp;rsquo;re starting your journey in machine learning, check out this roadmap I maintain.</description>
-    </item>
-    
-    <item>
-      <title>Contact</title>
-      <link>https://niladridutt.com/contact/</link>
-      <pubDate>Mon, 06 Jan 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://niladridutt.com/contact/</guid>
-      <description>E-mail : niladrishekhardutt@gmail.com
-GitHub : niladridutt
-Twitter : @dutt_niladri
-LinkedIn : niladridutt
-Schedule a 30 min meeting with me</description>
-    </item>
-    
-    <item>
-      <title>Experience</title>
-      <link>https://niladridutt.com/experience/</link>
-      <pubDate>Mon, 06 Jan 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://niladridutt.com/experience/</guid>
-      <description>NFTPort
-Lead Data Scientist | Oct 2020 - Aug 2022
-  Was part of initial 6 member team through its Series A of $26M. Led AI x blockchain services to build enhanced APIs for NFT search, duplicate detection, recommendation engine. Developed and maintained the core API at an API first company.  
- Nvidia Corporation
-Research Intern | Jan 2020 - Jun 2020
-  Researched how regularity affects learning in GANs by studying modelling on synthetic data.</description>
+      <title></title>
+      <link>/admin/config.yml</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/admin/config.yml</guid>
+      <description></description>
     </item>
     
   </channel>
