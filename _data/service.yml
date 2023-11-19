@@ -1,0 +1,22 @@
+# Reviewer
+- id: cvpr-2024
+  role: reviewer
+  venue: CVPR, 2024
+- id: neural-networks
+  role: reviewer
+  venue: Elsevier Neural Networks
+# - id: neurips-2023
+#   role: reviewer
+#   venue: NeurIPS, 2023
+# - id: siggraph-asia-2023
+#   role: reviewer
+#   venue: SIGGRAPH Asia, 2023
+# - id: cad-2023
+#   role: reviewer
+#   venue: Computer Aided Design, 2023
+# - id: graphical-models-2023
+#   role: reviewer
+#   venue: Graphical Models, 2023
+# - id: graphics-replicability-stamp-2023
+#   role: reviewer
+#   venue: Graphics Replicability Stamp Initiative, 2023

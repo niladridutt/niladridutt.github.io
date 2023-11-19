@@ -1,0 +1,18 @@
+- name: University of Chicago 
+  degree: Ph.D. Computer Science
+  description: >-
+    Advisor: <a href="https://people.cs.uchicago.edu/~ranahanocka/">Rana Hanocka</a> </br>
+    Topic: Deep Learning for Computer Graphics and 3D Computer Vision </br>
+    GPA: 4.0/4.0
+  dates: Fall 2022 - Present
+  location: Chicago, IL
+
+- name: University of Chicago
+  degree: B.S. Computer Science with Honors
+  description: >-
+    Specialization in Machine Learning, Minor in Data Science, Minor in Astrophysics </br>
+    Advisor: <a href="https://sanjayk.io/?src=%2F~skr%2F">Sanjay Krishnan</a> </br>
+    Summa Cum Laude </br>
+    GPA: 3.96/4.0
+  dates: Fall 2018 - Spring 2022
+  location: Chicago, IL

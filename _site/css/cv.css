@@ -1,0 +1,23 @@
+body { font-family: 'Arial'; }
+
+body { margin-top: 1em; font-family: "Noto Sans", sans-serif; }
+
+.portrait-column { padding: 0; }
+
+.portrait-image { border-radius: 50%; max-width: 7em; }
+
+.author-me { font-weight: 600; }
+
+h2 { margin-top: 0.5em !important; margin-bottom: 0.3em !important; }
+
+.columns { margin-bottom: 0 !important; }
+
+@media print { html, body { height: auto; font-size: 9pt; /* changing to 10pt has no impact */ } }
+
+.header-line { display: flex; align-items: center; }
+
+.underline { flex-grow: 1; /* makes the div grow to take up all available space */ border-bottom: 2px solid black; /* adjust this to the desired thickness and color of the line */ height: 1.7em; /* adjust this to vertically align the line with the baseline of the h2 text */ margin-left: 2px; }
+
+ul.no-margin-padding { margin-top: 0; margin-bottom: 0; padding: 0; }
+
+/*# sourceMappingURL=cv.css.map */

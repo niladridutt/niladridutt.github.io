@@ -1,0 +1,280 @@
+---
+layout: null
+---
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>{{ site.title }}</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+    <link href="./css/fontawesome.all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" rel="stylesheet">
+    <link href="./css/bulma.min.css" rel="stylesheet">
+    <link href="./css/cv.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script defer src="./js/fontawesome.all.min.js"></script>
+</head>
+
+<body>
+
+    <section>
+        <div class="container is-max-desktop">
+            <div class="columns is-vcentered">
+                <div class="column">
+                    <h1 class="title is-2">{{ site.name }}</h1>
+                    <h1 class="subtitle is-5">{{ site.position }}</h1>
+                </div>
+                <div class="column is-narrow portrait-column">
+                    <img class="portrait-image" src="{{ '/images/portrait.jpg' | relative_url }}"
+                        alt="A portrait of Niladri Shekhar Dutt" />
+                </div>
+                <div class="column has-text-right">
+                    <p>
+                        <!-- <a href="{{ site.url }}"> -->
+                        <a href="https://niladridutt.com/">
+                            <i class="fas fa-home"></i>
+                            <!-- {% assign url_parts = site.url | split: "//" %}
+                            {{ url_parts[1] }} -->
+                            niladridutt.com
+                        </a>
+                    </p>
+                    <p>
+                        <a href="https://github.com/{{ site.github_username }}">
+                            <i class="fab fa-github"></i>
+                            {{ site.github_username }}
+                        </a>
+                    </p>
+                    <!-- <p>
+                        <a href="https://twitter.com/{{ site.twitter_username }}">
+                            <i class="fab fa-twitter"></i>
+                            {{ site.twitter_username }}
+                        </a>
+                    </p> -->
+                    <p>
+                        <a href="mailto:{{ site.email }}">
+                            <i class="fas fa-envelope"></i>
+                            {{ site.email }}
+                        </a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="header-line">
+                    <h2>Education</h2>
+                    <div class="underline"></div>
+                </div>
+                {% for school in site.data.education %}
+                <div class="columns">
+                    <div class="column is-four-fifths">
+                        <b>{{school.degree}}, {{ school.name }}</b><br />
+                        {{ school.description }}
+                    </div>
+                    <div class="column is-one-fifths has-text-right">
+                        {{ school.location }} <br />
+                        {{ school.dates }}
+                    </div>
+                </div>
+                {% endfor %}
+
+                <div class="header-line">
+                    <h2>Publications</h2>
+                    <div class="underline"></div>
+                </div>
+                {% for publication in site.data.publications %}
+                <div class="columns">
+                    <div class="column is-four-fifths">
+                        <a href="{{ publication.project_page }}"><b>{{ publication.title }}</b></a>
+                        <div class="publication-authors">
+                            {% for author_id in publication.authors %}
+                            {% assign author = site.data.authors[author_id] %}
+                            <span class="author-block {% if author.is_me %}author-me{% endif %}">
+                                {% if author.is_me %}
+                                {{ author.first_name | slice: 0 }}. {{ author.last_name }}{% if forloop.last == false
+                                %},{%
+                                endif %}
+                                {% else %}
+                                <a href="{{ author.website }}">{{ author.first_name | slice: 0 }}. {{ author.last_name
+                                    }}</a>{% if
+                                forloop.last == false %},{% endif %}
+                                {% endif %}
+                            </span>
+                            {% endfor %}
+                        </div>
+                        {{ publication.description }}
+                    </div>
+                    <div class="column is-one-fifths has-text-right">
+                        {{ publication.venue }}
+                    </div>
+                </div>
+                {% endfor %}
+
+                <div class="header-line">
+                    <h2>Employment</h2>
+                    <div class="underline"></div>
+                </div>
+                {% for job in site.data.employment %}
+                <div class="columns">
+                    <div class="column is-four-fifths">
+                        <b>{{ job.company }}</b><br />
+                        {{ job.title }}<br />
+                        <div class="column">
+                        {% for item in job.description %}
+                            <li>{{ item }}</li>
+                        {% endfor %}
+                        </div>
+                    </div>
+                    <div class="column is-one-fifths has-text-right">
+                        {{ job.location }}
+                        <br />
+                        {{ job.dates }}
+                    </div>
+                </div>
+                {% endfor %}
+
+                <!-- AWARDS -->
+                <div class="header-line">
+                    <h2>Honors and Awards</h2>
+                    <div class="underline"></div>
+                </div>
+                {% for award in site.data.awards %}
+                <div class="columns">
+                    <div class="column is-narrow has-text-right is-1">
+                        {{ award.date }}
+                    </div>
+                    <div class="column is-narrow">
+                        <b>{{ award.title }}</b> {{ award.description}}
+                    </div>
+                    <div class="column is-one-fifths has-text-right">
+                        {{ award.venue }}
+                    </div>
+                </div>
+                <!-- <div class="columns"><div class="column"></div></div> -->
+                {% endfor %}
+
+                <!-- TEACHING -->
+                <div class="header-line">
+                    <h2>Mentorship and Teaching</h2>
+                    <div class="underline"></div>
+                </div>
+                {% for role in site.data.teaching %}
+                <div class="columns">
+                    <div class="column is-three-fifths">
+                        <!-- <b>{{ role.title }}, {{ role.venue }}</b> <br /> -->
+                        <h5 style="margin-bottom: 0;">{{ role.title }}, {{ role.venue }}</h5>
+                        {% for item in role.items %}
+                            {{ item.name }}
+                            <ul class="no-margin-padding">
+                            {% for bullet in item.bullets %}
+                                <li>
+                                    {% if bullet.subject %}
+                                        {{ bullet.subject }} &mdash;
+                                    {% endif %}
+                                    {{ bullet.text }}
+                                </li>
+                            {% endfor %}
+                            </ul>
+                        {% endfor %}
+                        </ul>
+                    </div>
+                    <div class="column is-two-fifths has-text-right">
+                        {% for item in role.items %}
+                            <br />{{ item.dates }}<br />
+                            {% for bullet in item.bullets %}
+                                {{ bullet.dates }}<br />
+                            {% endfor %}
+                        {% endfor %}
+                    </div>
+                </div>
+                {% endfor %}
+
+                <!-- TALKS -->
+                <div class="header-line">
+                    <h2>Invited Talks</h2>
+                    <div class="underline"></div>
+                </div>
+                <div class="columns">
+                    {% for talk in site.data.talks %}
+                    <div class="column is-narrow has-text-right is-1">
+                        {{ talk.date }}
+                    </div>
+                    <div class="column is-narrow">
+                        <b>{{ talk.venue }}.</b> {{talk.title}}.
+                    </div>
+                    <div class="column is-one-fifths has-text-right">
+                        {{ talk.location }}
+                    </div>
+                    {% endfor %}
+                </div>
+
+                <!-- SERVICE -->
+                <div class="header-line">
+                    <h2>Service</h2>
+                    <div class="underline"></div>
+                </div>
+                <!-- <div class="columns is-flex-direction-column"> -->
+                <div class="columns">
+                    <div class="column">
+                        <h4>Reviewer</h4>
+                        <ul>
+                        {% for service in site.data.service %}
+                            <li>{{ service.venue }}</li>
+                        {% endfor %}
+                        </ul>
+                    </div>
+                    <!-- <div class="column">
+                        <h4>Reviewer</h4>
+                        <ul>
+                        {% for service in site.data.service %}
+                            {% if service.role == "reviewer" %}
+                                <li>{{ service.venue }}</li>
+                            {% endif %}
+                        {% endfor %}
+                        </ul>
+                    </div> -->
+                    <!-- <div class="column">
+                        <h4 style="margin-bottom: 0;">Reviewer</h4>
+                    </div>
+                    <div class="column ml-3 is-gapless">
+                        {% for service in site.data.service %}
+                            {% if service.role == "reviewer" %}
+                                <li>{{ service.venue }}</li>
+                            {% endif %}
+                        {% endfor %}
+                    </div> -->
+                </div>
+
+                <!-- Skills -->
+                <div class="header-line">
+                    <h2>Skills</h2>
+                    <div class="underline"></div>
+                </div>
+                <!-- <div class="columns is-flex-direction-column"> -->
+                <div class="columns">
+                    <div class="column is-narrow has-text-right">
+                        {% for skill in site.data.skills %}
+                            <h5>{{ skill.type }}</h5>
+                        {% endfor %}
+                    </div>
+                    <div class="column">
+                        {% for skill in site.data.skills %}
+                            {% for item in skill.items %}
+                                {{ item }}{% if forloop.last == false %},{% endif %}
+                            {% endfor %}
+                        {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

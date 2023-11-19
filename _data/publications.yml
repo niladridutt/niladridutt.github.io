@@ -1,0 +1,43 @@
+- id: 3dpaintbrush
+  title: "ProteusNeRF: Fast Lightweight NeRF Editing using 3D-Aware Image Context"
+  venue: ArXiv, 2023
+  description: "A fast and lightweight framework for interactive editing of NeRF assets via existing image manipulation tools or generative frameworks. This is enabled by a novel 3D-aware image context that allows linking edits across multiple views."
+  project_page: "https://proteusnerf.github.io/"
+  # github: threedle/3d-paintbrush
+  arxiv: 2310.09965
+  pdf: "https://arxiv.org/pdf/2310.09965.pdf"
+  image: proteus_before.jpg
+  image_mouseover: proteus_after.mp4
+  authors:
+    - binglun
+    - niladri
+    - niloy
+
+# - id: 3dhighlighter
+#   title: "3D Highlighter: Localizing Regions on 3D Shapes via Text Descriptions"
+#   venue: CVPR, 2023
+#   description: "Our technique reasons about where to place seemingly unrelated concepts in semantically meaningful locations on the 3D shape, such as a 'poncho' on a horse or 'shoes' on an alien."
+#   project_page: "https://threedle.github.io/3DHighlighter/"
+#   github: threedle/3DHighlighter
+#   arxiv: 2212.11263
+#   image: highlighter_before.png
+#   image_mouseover: highlighter_after.mp4
+#   authors:
+#     - dale
+#     - itai
+#     - rana
+#   awards:
+#     - "Highlight Paper"
+
+- id: vizextract
+  title: "Advancing the Representation and Biological Interpretation of Cell
+Painting Readouts for Toxicity Prediction"
+  venue: "Society of Toxicology Annual Congress 2023, 62nd Annual Meeting, Nashville, USA"
+  description: "Represented cell morphology in grid form layout to use CNNs to exploit spatial information from highly correlated Cell Painting features to predict biological toxicity and study biological interpretations."
+  pdf: "https://drive.google.com/file/d/13yydWNffy0rGeMXYmtzpaN5BtO8mDxL1/view?usp=drive_link"
+  image: poster.jpg
+  authors:
+    - srijit
+    - niladri
+    - poster-authors
+    - bender
