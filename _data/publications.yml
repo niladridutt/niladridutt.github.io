@@ -1,9 +1,21 @@
-- id: 3dpaintbrush
+- id: diff3f
+  title: "Diffusion 3D Features (Diff3F): Decorating Untextured Shapes with Distilled Semantic Features"
+  venue: ArXiv, 2023
+  description: "A feature distiller that harnesses the expressive power of in-painting diffusion features and distills them to points on 3D surfaces to produce semantic descriptors that attain SOTA correspondence accurracy while being zero-shot."
+  project_page: "https://diff3f.github.io/"
+  arxiv: 2311.17024
+  pdf: "https://diff3f.github.io/assets/2311.17024_compressed.pdf"
+  image: diff3f.jpg
+  authors:
+    - niladri
+    - sanjeev
+    - niloy
+
+- id: proteusnerf
   title: "ProteusNeRF: Fast Lightweight NeRF Editing using 3D-Aware Image Context"
   venue: ArXiv, 2023
   description: "A fast and lightweight framework for interactive editing of NeRF assets via existing image manipulation tools or generative frameworks. This is enabled by a novel 3D-aware image context that allows linking edits across multiple views."
   project_page: "https://proteusnerf.github.io/"
-  # github: threedle/3d-paintbrush
   arxiv: 2310.09965
   pdf: "https://arxiv.org/pdf/2310.09965.pdf"
   image: proteus_before.jpg
