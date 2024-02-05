@@ -4,7 +4,7 @@
   description: "A feature distiller that harnesses the expressive power of in-painting diffusion features and distills them to points on 3D surfaces to produce semantic descriptors that attain SOTA correspondence accurracy while being zero-shot."
   project_page: "https://diff3f.github.io/"
   arxiv: 2311.17024
-  pdf: "https://diff3f.github.io/assets/2311.17024_compressed.pdf"
+  pdf: "https://diff3f.github.io/assets/2311.17024.pdf"
   image: diff3f.jpg
   authors:
     - niladri
