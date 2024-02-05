@@ -24,9 +24,9 @@ position: Research Engineer
 email: niladrishekhardutt@gmail.com
 description: >-
   I am a Research Engineer at [Ready Player Me](https://readyplayer.me/) working on Generative AI x 3D.
-  I completed my master's in Computer Vision at University College London (UCL) advised by [Prof. Niloy Mitra](http://www0.cs.ucl.ac.uk/staff/n.mitra/). 
-  Previously, I was a Founding Engineer at NFTPort leading machine learning from its inception through its Series A round of $26M. Prior to that, I was a visiting student at the University of California, Berkeley
-  where I worked with Dr Brandie Nonnecke on ML x social network analysis. I have also spent time as a research intern at Nvidia and IIT Kharagpur.
+  I completed my master's in Computer Vision at <span style="color: rgb(235, 40, 124);">University College London (UCL)</span> advised by [Prof. Niloy Mitra](http://www0.cs.ucl.ac.uk/staff/n.mitra/). 
+  Previously, I was a Founding Engineer at  <span style="color: rgb(235, 40, 124);">NFTPort</span> leading machine learning from its inception through its Series A round of $26M. Prior to that, I was a visiting student at the <span style="color: rgb(235, 40, 124);">University of California, Berkeley</span>
+  where I worked with Dr Brandie Nonnecke on ML x social network analysis. I have also spent time as a research intern at <span style="color: rgb(235, 40, 124);">Nvidia</span> and <span style="color: rgb(235, 40, 124);">IIT Kharagpur</span>.
   <br><br>
   I am interested in generating and editing 3D content (particularly meshes that are compatible with graphics engines) using text instructions, images or other simple modalities.  I believe solving this requires a fundamental understanding of shape design- *what makes a sofa well-designed and functional?* 
 baseurl: "" # the subpath of your site, e.g. /blog
