@@ -1,10 +1,10 @@
 - id: diff3f
   title: "Diffusion 3D Features (Diff3F): Decorating Untextured Shapes with Distilled Semantic Features"
-  venue: ArXiv, 2023
+  venue: CVPR 2024
   description: "A feature distiller that harnesses the expressive power of in-painting diffusion features and distills them to points on 3D surfaces to produce semantic descriptors that attain SOTA correspondence accurracy while being zero-shot."
   project_page: "https://diff3f.github.io/"
   arxiv: 2311.17024
-  pdf: "https://diff3f.github.io/assets/2311.17024.pdf"
+  pdf: "https://arxiv.org/pdf/2311.17024.pdf"
   image: diff3f.jpg
   authors:
     - niladri
