@@ -13,7 +13,7 @@
 
 - id: proteusnerf
   title: "ProteusNeRF: Fast Lightweight NeRF Editing using 3D-Aware Image Context"
-  venue: ArXiv, 2023
+  venue: ACM SIGGRAPH SYMPOSIUM ON INTERACTIVE 3D GRAPHICS AND GAMES (I3D) 2024
   description: "A fast and lightweight framework for interactive editing of NeRF assets via existing image manipulation tools or generative frameworks. This is enabled by a novel 3D-aware image context that allows linking edits across multiple views."
   project_page: "https://proteusnerf.github.io/"
   arxiv: 2310.09965
