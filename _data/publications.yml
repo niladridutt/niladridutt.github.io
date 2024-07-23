@@ -10,6 +10,23 @@
     - niladri
     - sanjeev
     - niloy
+  
+- id: trj
+  title: "Temporal Residual Jacobians for Rig-free Motion Transfe"
+  venue: ECCV 2024
+  description: "A representation to enable data-driven motion transfer motions without the need for any rigging or intermediate shape keyframes."
+  project_page: "https://temporaljacobians.github.io/"
+  arxiv: 2407.14958
+  pdf: "https://arxiv.org/pdf/2407.14958"
+  image: trj.png
+  authors:
+    - sanjeev
+    - niladri
+    - sid
+    - noam
+    - vova
+    - matthew
+    - niloy
 
 - id: proteusnerf
   title: "ProteusNeRF: Fast Lightweight NeRF Editing using 3D-Aware Image Context"

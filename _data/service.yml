@@ -1,4 +1,7 @@
 # Reviewer
+- id: neurips-2024
+  role: reviewer
+  venue: NeurIPS, 2024
 - id: cvpr-2024
   role: reviewer
   venue: CVPR, 2024

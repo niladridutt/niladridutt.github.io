@@ -14,7 +14,7 @@ sanjeev:
 binglun:
   first_name: Binglun 
   last_name: Wang
-  # website: https://itailang.github.io/
+  website: https://binglunwang.github.io/
 srijit:
   first_name: Srijit 
   last_name: Seal
@@ -26,3 +26,19 @@ bender:
   first_name: Andreas 
   last_name: Bender
   website: https://www.ch.cam.ac.uk/person/ab454
+sid:
+  first_name: Siddhartha
+  last_name: Chaudhuri
+  website: https://www.cse.iitb.ac.in/~sidch/index.html
+noam:
+  first_name: Noam  
+  last_name: Aigerman
+  website: https://noamaig.github.io/
+vova:
+  first_name: Vladimir 
+  last_name: Kim
+  website: http://www.vovakim.com/
+matthew:
+  first_name: Matthew 
+  last_name: Fisher
+  website: https://techmatt.github.io/

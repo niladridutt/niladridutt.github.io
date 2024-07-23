@@ -78,28 +78,27 @@ layout: null
           <div class="portrait">
             <img src="{{ '/images/portrait.jpg' | relative_url }}" />
           </div>
-          <center>📍 London, UK</center>
+          <!-- <center>📍 London, UK</center> -->
         </div>
 
         <div class="column">
           <h1 class="title">
+            <br>
             <b>{{ site.name }}</b>
           </h1>
           <div class="content has-text-justified">
             {{ site.description | markdownify }}
-            <div class="buttons">
-              <!-- <a class="external-link button is-light is-link" href="cv.html">
-                <span class="icon"><i class="fas fa-file"></i></span>
-                <span>CV</span>
-              </a> -->
-              <!-- <a class="external-link button is-light is-link"
-                href="https://scholar.google.com/citations?user={{ site.google_scholar }}">
-                <span class="icon"><i class="ai ai-google-scholar"></i></span>
-                <span>Scholar</span>
-              </a> -->
+
+            <!-- previously links were here-->
+            <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
               <a class="external-link button is-light is-link" href="mailto:{{ site.email }}" target="_blank">
                 <span class="icon"><i class="fas fa-envelope"></i></span>
                 <span>Email</span>
+              </a>
+              <a class="external-link button is-light is-link"
+                href="https://scholar.google.com/citations?user={{ site.google_scholar }}">
+                <span class="icon"><i class="ai ai-google-scholar"></i></span>
+                <span>Scholar</span>
               </a>
               <a class="external-link button is-light is-link" href="https://github.com/{{ site.github_username }}" target="_blank">
                 <span class="icon"><i class="fab fa-github"></i></span>
@@ -115,12 +114,41 @@ layout: null
                 <span>LinkedIn</span>
               </a>
             </div>
-            <br>
-            Will we ever answer <a href="https://en.wikipedia.org/wiki/The_Last_Question" target="_blank"> The Last Question</a>? Perhaps not in our lifetime, but it's definitely worth pursuing :)
+            <!-- <br> -->
+            <!-- Will we ever answer <a href="https://en.wikipedia.org/wiki/The_Last_Question" target="_blank"> The Last Question</a>? Perhaps not in our lifetime, but it's definitely worth pursuing :) -->
           </div>
         </div>
       </div>
-      <blockquote>“Break the cycle, Morty. Rise above. Focus on Science.”</blockquote>
+      <div class="buttons">
+              <!-- <a class="external-link button is-light is-link" href="cv.html">
+                <span class="icon"><i class="fas fa-file"></i></span>
+                <span>CV</span>
+              </a> -->
+              <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <a class="external-link button is-light is-link" href="mailto:{{ site.email }}" target="_blank">
+                <span class="icon"><i class="fas fa-envelope"></i></span>
+                <span>Email</span>
+              </a>
+              <a class="external-link button is-light is-link"
+                href="https://scholar.google.com/citations?user={{ site.google_scholar }}" target="_blank">
+                <span class="icon"><i class="ai ai-google-scholar"></i></span>
+                <span>Scholar</span>
+              </a>
+              <a class="external-link button is-light is-link" href="https://github.com/{{ site.github_username }}" target="_blank">
+                <span class="icon"><i class="fab fa-github"></i></span>
+                <span>Github</span>
+              </a>
+              <a class="external-link button is-light is-link" href="https://twitter.com/{{ site.twitter_username }}" target="_blank">
+                <span class="icon"><i class="fab fa-twitter"></i></span>
+                <span>Twitter</span>
+              </a>
+              <a class="external-link button is-light is-link"
+                href="https://linkedin.com/in/{{ site.linkedin_username }}" target="_blank">
+                <span class="icon"><i class="fab fa-linkedin"></i></span>
+                <span>LinkedIn</span>
+              </a>
+            </div> -->
+      <!-- <blockquote>“Break the cycle, Morty. Rise above. Focus on Science.”</blockquote> -->
     </div>
   </section>
 
@@ -129,7 +157,7 @@ layout: null
     <div class="container is-max-desktop">
 
       <!-- News. -->
-      <!-- <h2 class="title is-3">News</h2>
+      <h2 class="title is-3">News</h2>
       <hr style="border: 1px solid #000">
       <div class="content">
         <ul>
@@ -139,7 +167,7 @@ layout: null
           </li>
           {% endfor %}
         </ul>
-      </div> -->
+      </div>
 
       <!-- Research. -->
       <section id="research">

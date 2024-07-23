@@ -1,13 +1,15 @@
-- date: Nov 2023
+- date: July 2024
   description: >-
-    We present [_3D Paintbrush_](https://threedle.github.io/3d-paintbrush/),
-    which produces precise localizations and highly-detailed local textures on meshes.
+    [_Temporal Residual Jacobians_](https://temporaljacobians.github.io/) has been accepted at <span style="color: rgb(235, 40, 124);">ECCV'24</span> taking place in Milan.
 
-- date: Feb 2023
+- date: Mar 2024
   description: >-
-    [_3D Highlighter_](https://threedle.github.io/3DHighlighter/) has been accepted to CVPR 2023 as a highlight paper.
+    [_ProteusNeRF_](https://proteusnerf.github.io/) has been accepted at <span style="color: rgb(235, 40, 124);">I3D'24</span> taking place in Philadelphia.
 
-- date: Dec 2022
+- date: Feb 2024
   description: >-
-    We present [_3D Highlighter_](https://threedle.github.io/3DHighlighter/),
-    which localizes regions on 3D shapes via text descriptions.
+    [_Diffusion 3D Features_](https://diff3f.github.io/) has been accepted at <span style="color: rgb(235, 40, 124);">CVPR'24</span> taking place in Seattle.
+
+- date: Oct 2023
+  description: >-
+    Graduated with Distinction from UCL with a master's in Computer Vision, Graphics and Imaging. Joined [Ready Player Me](https://readyplayer.me/) as a Research Engineer!
