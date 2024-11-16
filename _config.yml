@@ -25,11 +25,9 @@ name: Niladri Shekhar Dutt
 position: Research Engineer
 email: niladrishekhardutt@gmail.com
 description: >-
-  I am an incoming [ELLIS](https://ellis.eu/phd-postdoc) PhD student at <span style="color: rgb(235, 40, 124);">University College London (UCL)</span> advised by [Prof. Niloy Mitra](http://www0.cs.ucl.ac.uk/staff/n.mitra/) and sponsored by <span style="color: rgb(235, 40, 124);">Adobe Research</span>. My research lies at the interesction of computer vision, computer graphics, and machine learning; I'm particularly interested in 3D/4D generative modeling. 
-  <br><br>
-  Previous research experiences: Nvidia, University of California, Berkeley, IIT Kharagpur. 
-  <br><br>
-  Previous work experiences: Ready Player Me (Research Engineer), NFTPort (Founding Engineer; raised $26M Series A)
+  I am a first year [ELLIS](https://ellis.eu/phd-postdoc) PhD student at <span style="color: rgb(235, 40, 124);">University College London (UCL)</span>, sponsored by <span style="color: rgb(235, 40, 124);">Adobe Research</span>. 
+  I am fortunate to be advised by [Niloy Mitra](http://www0.cs.ucl.ac.uk/staff/n.mitra/) (UCL) and [Duygu Ceylan](https://www.duygu-ceylan.com/) (Adobe).
+  My research lies at the interesction of computer vision, computer graphics, and machine learning; I'm particularly interested in 2D/3D generative modelling by leveraging LLMs for reasoning. 
 
   <br><br>
 baseurl: "" # the subpath of your site, e.g. /blog

@@ -2,19 +2,19 @@
   title: Research Engineer
   description:
     - Ready Player Me is a Series B cross-app avatar platform for the metaverse backed by a16z. 
-    - Working on Generative AI x 3D, avatar generation from a single image, texture generation.
-  dates: "Oct 2023 - Present"
+    - Worked on Generative AI x 3D, avatar generation from a single image, texture generation, identitiy preservation in stylized generaive modelling.
+  dates: "Oct 2023 - Sep 2024"
   location: London, UK
   logo: rpm.gif
 
-- company: Smart Geometry Processing Group, UCL
-  title: Smart Geometry Processing Group, UCL
-  description:
-    - Developed 3D semantic descriptors which achieve SOTA correspondence accuracy.
-    - Editing NeRFs at interactive rates (10-30x speedup) using text or image processing tools.
-  dates: "April 2023 - Present"
-  location: Research Assistant
-  logo: ucl.png
+# - company: Smart Geometry Processing Group, UCL
+#   title: Smart Geometry Processing Group, UCL
+#   description:
+#     - Developed 3D semantic descriptors which achieve SOTA correspondence accuracy.
+#     - Editing NeRFs at interactive rates (10-30x speedup) using text or image processing tools.
+#   dates: "April 2023 - Present"
+#   location: Research Assistant
+#   logo: ucl.png
 
 - company: NFTPort
   title: Founding Engineer
