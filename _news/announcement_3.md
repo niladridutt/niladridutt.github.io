@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Temporal Residual Jacobians has been accepted at ECCV’24 :confetti_ball:
+[Temporal Residual Jacobians](https://temporaljacobians.github.io/) <a style="color: black;">has been accepted at ECCV’24 :confetti_ball:</a>
