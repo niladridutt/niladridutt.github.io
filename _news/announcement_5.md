@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-[Diff3F](https://diff3f.github.io/) has been accepted at CVPR’24!
+[Diff3F](https://diff3f.github.io/) has been accepted at CVPR’24 :tada:
