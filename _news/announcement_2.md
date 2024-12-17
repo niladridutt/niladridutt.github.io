@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Presented my research at [The Alan Turing Institute](https://www.turing.ac.uk/) PhD day :sparkles:
+Presented my research at The Alan Turing Institute PhD day :sparkles:
