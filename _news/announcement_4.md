@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-[ProteusNeRF](https://proteusnerf.github.io/) <a style="color: black;">has been accepted at I3D’24 :balloon:</a>
+[ProteusNeRF](https://proteusnerf.github.io/) <a style="color: black;">has been accepted at I3D’24</a>
