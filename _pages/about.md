@@ -18,7 +18,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
 ---
 
-I am a first year [ELLIS](https://ellis.eu/phd-postdoc) PhD student at [University College London (UCL)](https://www.ucl.ac.uk/), sponsored by [Adobe Research](https://research.adobe.com/). I am fortunate to be advised by [Prof Niloy Mitra](http://www0.cs.ucl.ac.uk/staff/n.mitra/) (UCL) and [Duygu Ceylan](https://www.duygu-ceylan.com/) (Adobe). My research lies at the interesction of computer vision, computer graphics, and machine learning; I’m particularly interested in 2D/3D generative modelling by leveraging LLMs for reasoning.
+I am a first year [ELLIS](https://ellis.eu/phd-postdoc) PhD student at [University College London (UCL)](https://www.ucl.ac.uk/), sponsored by [Adobe Research](https://research.adobe.com/). I am fortunate to be advised by [Prof Niloy Mitra](http://www0.cs.ucl.ac.uk/staff/n.mitra/) (UCL) and [Duygu Ceylan](https://www.duygu-ceylan.com/) (Adobe). My current research focuses on multimodal learning, combining MLLMs with computer graphics and vision for reasoning in generative and procedural modeling tasks.
 
 <span style="font-size: 32px;">past</span>
 

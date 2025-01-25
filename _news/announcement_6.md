@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-<a style="color: black;">FlairGPT has been accepted at Eurographics'25</a>
+[FlairGPT](https://flairgpt.github.io/) <a style="color: black;">has been accepted at Eurographics'25</a>
