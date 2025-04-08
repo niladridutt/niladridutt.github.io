@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-<a style="color: black;">Co-organizing the </a>[London GenAI Forum'25](https://londongenai.github.io/)
+<a style="color: black;">Co-organizing the </a>[London GenAI Forum'25](https://londongenai.github.io/).</a>

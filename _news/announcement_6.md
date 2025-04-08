@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-<a style="color: black;">Selected for the Google Gemini Academic Program</a>
+<a style="color: black;">Selected for Google Gemini Academic Program</a>
