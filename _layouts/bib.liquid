@@ -163,6 +163,11 @@
     {% if entry.year %}
       {% capture entryyear %}{{ " " }}{{ entry.year }}{% endcapture %}
     {% endif %}
+    {% if entry.equal_authorship %}
+  <div class="periodical">
+    <em>* denotes equal authorship</em>
+  </div>
+    {% endif %}
     {% if entry.location %}
       {% capture entrytype %}{{ entrytype }}{{ ", " }}{{ entry.location }}{% endcapture %}
     {% endif -%}

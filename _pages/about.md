@@ -25,7 +25,20 @@ I'm currently a research intern at Adobe working with [Xuelin Chen](https://xuel
 <span style="font-size: 32px;">past</span>
 
 Research Intern @ [Nvidia](https://www.nvidia.com/en-us/), Visiting scholar @ [Berkeley](https://www.berkeley.edu/),  Research Engineer @ [Ready Player Me](https://readyplayer.me/), Founding Engineer @ NFTPort (raised $26M, now [Galadriel](https://galadriel.com/))
+<br>
+
+<span style="font-size: 32px;">academic service</span>
 <br><br>
+  I review papers for the following conferences:
+
+  <ul>
+    <li><strong>Computer Graphics:</strong> SIGGRAPH, SIGGRAPH Asia, ACM Transactions on Graphics (TOG), Computer Graphics Forum</li>
+    <li><strong>Computer Vision:</strong> CVPR, ICCV</li>
+    <li><strong>Machine Learning:</strong> NeurIPS, ICLR, ICML, AAAI</li>
+  </ul>
+
+<br>
+
 
 <!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 
