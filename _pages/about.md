@@ -20,7 +20,7 @@ social: false # includes social icons at the bottom of the page
 
 I am a first year [ELLIS](https://ellis.eu/phd-postdoc) PhD student at [University College London (UCL)](https://www.ucl.ac.uk/), sponsored by [Adobe Research](https://research.adobe.com/). I am fortunate to be advised by [Prof Niloy Mitra](http://www0.cs.ucl.ac.uk/staff/n.mitra/) (UCL) and [Duygu Ceylan](https://www.duygu-ceylan.com/) (Adobe). My current research focuses on multimodal learning, combining MLLMs with computer graphics and vision for reasoning in generative and procedural modeling tasks.
 
-I'm currently a research intern at Adobe working with [Xuelin Chen](https://xuelin-chen.github.io/), [Paul Gurrero](https://paulguerrero.net/), [Chun-Hao Huang](https://research.adobe.com/person/paulchhuang/), and [Duygu Ceylan](https://www.duygu-ceylan.com/).
+I'm currently a Research Scientist Intern at Adobe working with [Xuelin Chen](https://xuelin-chen.github.io/), [Paul Gurrero](https://paulguerrero.net/), and [Chun-Hao Huang](https://research.adobe.com/person/paulchhuang/).
 
 <span style="font-size: 32px;">past</span>
 
@@ -29,7 +29,7 @@ Research Intern @ [Nvidia](https://www.nvidia.com/en-us/), Visiting scholar @ [B
 
 <span style="font-size: 32px;">academic service</span>
 <br><br>
-  I review papers for the following conferences:
+  I review papers for the following conferences/journals:
 
   <ul>
     <li><strong>Computer Graphics:</strong> SIGGRAPH, SIGGRAPH Asia, ACM Transactions on Graphics (TOG), Computer Graphics Forum</li>
