@@ -64,6 +64,22 @@ layout: default
       {% include selected_papers.liquid %}
     {% endif %}
 
+    <!-- Academic Service -->
+    {% if page.academic_service %}
+
+    <br>
+
+      <h2 style="color: inherit; font-size: 32px;">academic service</h2>
+
+      <p>I review papers for the following conferences/journals:</p>
+      <ul>
+        <li><strong>Computer Graphics:</strong> SIGGRAPH, SIGGRAPH Asia, ACM Transactions on Graphics (TOG), Computer Graphics Forum</li>
+        <li><strong>Computer Vision:</strong> CVPR, ICCV</li>
+        <li><strong>Machine Learning:</strong> NeurIPS, ICLR, ICML, AAAI</li>
+      </ul>
+      <br>
+    {% endif %}
+
     <!-- Social -->
     {% if page.social %}
       <div class="social">

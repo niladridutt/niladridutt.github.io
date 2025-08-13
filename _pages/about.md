@@ -15,6 +15,7 @@ profile:
 
 news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
+academic_service: true # includes academic service section after publications
 social: false # includes social icons at the bottom of the page
 ---
 
@@ -25,18 +26,6 @@ I'm currently a Research Scientist Intern at Adobe working with [Xuelin Chen](ht
 <span style="font-size: 32px;">past</span>
 
 Research Intern @ [Nvidia](https://www.nvidia.com/en-us/), Visiting scholar @ [Berkeley](https://www.berkeley.edu/),  Research Engineer @ [Ready Player Me](https://readyplayer.me/), Founding Engineer @ NFTPort (raised $26M, now [Galadriel](https://galadriel.com/))
-<br>
-
-<span style="font-size: 32px;">academic service</span>
-<br><br>
-  I review papers for the following conferences/journals:
-
-  <ul>
-    <li><strong>Computer Graphics:</strong> SIGGRAPH, SIGGRAPH Asia, ACM Transactions on Graphics (TOG), Computer Graphics Forum</li>
-    <li><strong>Computer Vision:</strong> CVPR, ICCV</li>
-    <li><strong>Machine Learning:</strong> NeurIPS, ICLR, ICML, AAAI</li>
-  </ul>
-
 <br>
 
 
