@@ -25,7 +25,7 @@ I'm currently a Research Scientist Intern at Adobe working with [Xuelin Chen](ht
 
 <span style="font-size: 32px;">past</span>
 
-Research Intern @ [Nvidia](https://www.nvidia.com/en-us/), Visiting scholar @ [Berkeley](https://www.berkeley.edu/),  Research Engineer @ [Ready Player Me](https://readyplayer.me/), Founding Engineer @ NFTPort (raised $26M, now [Galadriel](https://galadriel.com/))
+Research Intern @ [Nvidia](https://www.nvidia.com/en-us/), Visiting student @ [Berkeley](https://www.berkeley.edu/),  Research Engineer @ [Ready Player Me](https://readyplayer.me/), Founding Engineer @ NFTPort (raised $26M, now [Galadriel](https://galadriel.com/))
 <br>
 
 
