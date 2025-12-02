@@ -19,13 +19,15 @@ academic_service: true # includes academic service section after publications
 social: false # includes social icons at the bottom of the page
 ---
 
-I am a first year [ELLIS](https://ellis.eu/phd-postdoc) PhD student at [University College London (UCL)](https://www.ucl.ac.uk/), sponsored by [Adobe Research](https://research.adobe.com/). I am fortunate to be advised by [Prof Niloy Mitra](http://www0.cs.ucl.ac.uk/staff/n.mitra/) (UCL) and [Duygu Ceylan](https://www.duygu-ceylan.com/) (Adobe). My current research focuses on multimodal learning, combining MLLMs with computer graphics and vision for reasoning in generative and procedural modeling tasks.
+I am a 2nd year [ELLIS](https://ellis.eu/phd-postdoc) PhD student at [University College London (UCL)](https://www.ucl.ac.uk/), sponsored by [Adobe Research](https://research.adobe.com/). I am fortunate to be advised by [Prof Niloy Mitra](http://www0.cs.ucl.ac.uk/staff/n.mitra/) (UCL) and [Duygu Ceylan](https://www.duygu-ceylan.com/) (Adobe). 
 
-I'm currently a Research Scientist Intern at Adobe working with [Xuelin Chen](https://xuelin-chen.github.io/), [Paul Gurrero](https://paulguerrero.net/), and [Chun-Hao Huang](https://research.adobe.com/person/paulchhuang/).
+Research Interests: representation learning for 3D & multimodal learning.
+
+<!-- I'm currently a Research Scientist Intern at Adobe working with , [Paul Gurrero](https://paulguerrero.net/), and [Chun-Hao Huang](https://research.adobe.com/person/paulchhuang/). -->
 
 <span style="font-size: 32px;">past</span>
 
-Research Intern @ [Nvidia](https://www.nvidia.com/en-us/), Visiting student @ [Berkeley](https://www.berkeley.edu/),  Research Engineer @ [Ready Player Me](https://readyplayer.me/), Founding Engineer @ NFTPort (raised $26M, now [Galadriel](https://galadriel.com/))
+Research Scientist Intern @ [Adobe](https://research.adobe.com/) with [Xuelin Chen](https://xuelin-chen.github.io/), Research Intern @ [Nvidia](https://www.nvidia.com/en-us/), Visiting student @ [Berkeley](https://www.berkeley.edu/),  Research Engineer @ [Ready Player Me](https://readyplayer.me/), Founding Engineer @ NFTPort (raised $26M, now [Galadriel](https://galadriel.com/))
 <br>
 
 
