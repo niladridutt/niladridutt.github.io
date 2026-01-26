@@ -27,7 +27,7 @@ Research Interests: representation learning for 3D & multimodal learning.
 
 <span style="font-size: 32px;">past</span>
 
-Research Scientist Intern @ [Adobe](https://research.adobe.com/) with [Xuelin Chen](https://xuelin-chen.github.io/), Research Intern @ [Nvidia](https://www.nvidia.com/en-us/), Visiting student @ [Berkeley](https://www.berkeley.edu/),  Research Engineer @ [Ready Player Me](https://readyplayer.me/), Founding Engineer @ NFTPort (raised $26M, now [Galadriel](https://galadriel.com/))
+Research Scientist Intern @ [Adobe](https://research.adobe.com/) with [Xuelin Chen](https://xuelin-chen.github.io/), Research Intern @ [Nvidia](https://www.nvidia.com/en-us/), Visiting student @ [Berkeley](https://www.berkeley.edu/),  Research Engineer @ [Ready Player Me](https://readyplayer.me/) (acquired by Netflix), Founding Engineer @ NFTPort (raised $26M, now [Galadriel](https://galadriel.com/))
 <br>
 
 
