@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https://www.google-analytics.com https://*.google-analytics.com; media-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'self' https://www.googletagmanager.com; connect-src 'self' https://www.google-analytics.com https://*.google-analytics.com https://www.googletagmanager.com; object-src 'none'; frame-src 'none'; base-uri 'self'; form-action 'self'" />
+
+  <title>Niladri Shekhar Dutt</title>
+  <meta name="description" content="Niladri Shekhar Dutt — PhD candidate at UCL and Adobe Research, studying visual representation and multimodal learning." />
+  <meta name="author" content="Niladri Shekhar Dutt" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Niladri Shekhar Dutt" />
+  <meta property="og:description" content="PhD candidate at UCL &amp; Adobe Research — visual representation and multimodal learning." />
+  <meta property="og:url" content="https://niladridutt.com/" />
+  <meta property="og:image" content="https://niladridutt.com/assets/img/prof_pic.jpg" />
+  <meta name="twitter:card" content="summary" />
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png?v=2" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png?v=2" />
+  <link rel="alternate icon" href="/favicon.ico?v=2" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=2" />
+  <link rel="manifest" href="/site.webmanifest" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://www.googletagmanager.com" />
+  <link rel="preconnect" href="https://www.google-analytics.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&amp;family=Inter:wght@400;450;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="/css/style.css?v=13" />
+
+  <!-- Google Analytics: initialize the queue locally so CSP can remain strict. -->
+  <script src="/js/analytics.js?v=1"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6TQFX46TH0"></script>
+</head>
+<body>
+  <div class="bg-scene" aria-hidden="true">
+    <svg class="bg-svg" viewBox="0 0 1440 760" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <radialGradient id="bgSunGlow" cx="50%" cy="50%" r="50%">
+          <stop offset="0%"   stop-color="#e8542f" stop-opacity="0.22"/>
+          <stop offset="55%"  stop-color="#e2492c" stop-opacity="0.07"/>
+          <stop offset="100%" stop-color="#e2492c" stop-opacity="0"/>
+        </radialGradient>
+        <linearGradient id="bgSunFill" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%"   stop-color="#f0733f"/>
+          <stop offset="100%" stop-color="#d43a24"/>
+        </linearGradient>
+        <linearGradient id="bgMtnFar" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#162937"/>
+          <stop offset="100%" stop-color="#101923"/>
+        </linearGradient>
+        <linearGradient id="bgMtnMid" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#13283a"/>
+          <stop offset="100%" stop-color="#0d1722"/>
+        </linearGradient>
+        <linearGradient id="bgMtnNear" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#14263b"/>
+          <stop offset="48%" stop-color="#0d1a2b"/>
+          <stop offset="100%" stop-color="#070d16"/>
+        </linearGradient>
+        <linearGradient id="bgFloor" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#254b67" stop-opacity="0.34"/>
+          <stop offset="26%" stop-color="#10273a" stop-opacity="0.31"/>
+          <stop offset="100%" stop-color="#060b12" stop-opacity="0.72"/>
+        </linearGradient>
+        <radialGradient id="bgHorizonGlow" cx="50%" cy="50%" r="50%">
+          <stop offset="0%" stop-color="#65c9d0" stop-opacity="0.19"/>
+          <stop offset="52%" stop-color="#397aa3" stop-opacity="0.08"/>
+          <stop offset="100%" stop-color="#07101a" stop-opacity="0"/>
+        </radialGradient>
+        <linearGradient id="bgGridFade" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="white" stop-opacity="0.05"/>
+          <stop offset="24%" stop-color="white" stop-opacity="0.52"/>
+          <stop offset="100%" stop-color="white" stop-opacity="0.95"/>
+        </linearGradient>
+        <mask id="bgGridMask">
+          <rect x="0" y="294" width="1440" height="466" fill="url(#bgGridFade)"/>
+        </mask>
+        <!-- sky region: sun is only visible above the horizon (never on the ground) -->
+        <clipPath id="bgSky"><rect x="-2000" y="-1200" width="6000" height="1500"/></clipPath>
+      </defs>
+      <!-- whole scene composites first, then fades as one (correct occlusion) -->
+      <g class="bg-world">
+      <!-- LAYER 1: perspective ground grid (back) -->
+      <g class="bg-grid-layer">
+        <rect class="bg-floor" x="0" y="300" width="1440" height="460" fill="url(#bgFloor)"/>
+        <ellipse class="bg-horizon-glow" cx="720" cy="305" rx="710" ry="118" fill="url(#bgHorizonGlow)"/>
+        <g class="bg-grid" mask="url(#bgGridMask)">
+          <line x1="-1716" y1="760" x2="720" y2="300"/><line x1="-1368" y1="760" x2="720" y2="300"/>
+          <line x1="-1020" y1="760" x2="720" y2="300"/><line x1="-846" y1="760" x2="720" y2="300"/>
+          <line x1="-672" y1="760" x2="720" y2="300"/><line x1="-498" y1="760" x2="720" y2="300"/>
+          <line x1="-324" y1="760" x2="720" y2="300"/><line x1="-150" y1="760" x2="720" y2="300"/>
+          <line x1="24" y1="760" x2="720" y2="300"/><line x1="198" y1="760" x2="720" y2="300"/>
+          <line x1="372" y1="760" x2="720" y2="300"/><line x1="546" y1="760" x2="720" y2="300"/>
+          <line x1="720" y1="760" x2="720" y2="300"/><line x1="894" y1="760" x2="720" y2="300"/>
+          <line x1="1068" y1="760" x2="720" y2="300"/><line x1="1242" y1="760" x2="720" y2="300"/>
+          <line x1="1416" y1="760" x2="720" y2="300"/><line x1="1590" y1="760" x2="720" y2="300"/>
+          <line x1="1764" y1="760" x2="720" y2="300"/><line x1="1938" y1="760" x2="720" y2="300"/>
+          <line x1="2112" y1="760" x2="720" y2="300"/><line x1="2286" y1="760" x2="720" y2="300"/>
+          <line x1="2460" y1="760" x2="720" y2="300"/><line x1="2808" y1="760" x2="720" y2="300"/>
+          <line x1="3156" y1="760" x2="720" y2="300"/>
+          <line x1="0" y1="306" x2="1440" y2="306"/><line x1="0" y1="322" x2="1440" y2="322"/>
+          <line x1="0" y1="342" x2="1440" y2="342"/><line x1="0" y1="368" x2="1440" y2="368"/>
+          <line x1="0" y1="402" x2="1440" y2="402"/><line x1="0" y1="447" x2="1440" y2="447"/>
+          <line x1="0" y1="505" x2="1440" y2="505"/><line x1="0" y1="580" x2="1440" y2="580"/>
+          <line x1="0" y1="670" x2="1440" y2="670"/><line x1="0" y1="760" x2="1440" y2="760"/>
+        </g>
+      </g>
+
+      <!-- LAYER 2: sun (behind every mountain range) -->
+      <g clip-path="url(#bgSky)">
+        <g class="bg-sun-group">
+          <circle class="bg-sun-glow" cx="330" cy="132" r="250" fill="url(#bgSunGlow)"/>
+          <circle class="bg-sun" cx="330" cy="132" r="82" fill="url(#bgSunFill)"/>
+        </g>
+      </g>
+
+      <ellipse class="bg-atmosphere" cx="720" cy="292" rx="750" ry="72" fill="url(#bgHorizonGlow)"/>
+
+      <!-- LAYERS 3–5: all three ranges occlude the sun -->
+      <g class="bg-mtn-layer bg-mtn-far">
+        <path class="bg-mtn-shadow" d="M0,300 L100,196 L240,244 L380,164 L520,228 L660,158 L820,222 L960,176 L1120,232 L1280,180 L1440,222 L1440,300 Z"/>
+        <path class="bg-mtn-face" d="M0,300 L100,196 L240,244 L380,164 L520,228 L660,158 L820,222 L960,176 L1120,232 L1280,180 L1440,222 L1440,300 Z"/>
+        <path class="bg-mtn-rim" d="M0,300 L100,196 L240,244 L380,164 L520,228 L660,158 L820,222 L960,176 L1120,232 L1280,180 L1440,222"/>
+      </g>
+      <g class="bg-mtn-layer bg-mtn-mid">
+        <path class="bg-mtn-shadow" d="M0,300 L140,230 L300,272 L420,198 L560,254 L700,192 L860,246 L1000,202 L1160,252 L1320,212 L1440,244 L1440,300 Z"/>
+        <path class="bg-mtn-face" d="M0,300 L140,230 L300,272 L420,198 L560,254 L700,192 L860,246 L1000,202 L1160,252 L1320,212 L1440,244 L1440,300 Z"/>
+        <path class="bg-mtn-rim" d="M0,300 L140,230 L300,272 L420,198 L560,254 L700,192 L860,246 L1000,202 L1160,252 L1320,212 L1440,244"/>
+      </g>
+      <g class="bg-mtn-layer bg-mtn-near">
+        <path class="bg-mtn-shadow" d="M0,300 L90,238 L210,266 L330,232 L450,254 L580,234 L710,262 L840,238 L980,264 L1110,240 L1250,262 L1380,242 L1440,256 L1440,300 Z"/>
+        <path class="bg-mtn-face" d="M0,300 L90,238 L210,266 L330,232 L450,254 L580,234 L710,262 L840,238 L980,264 L1110,240 L1250,262 L1380,242 L1440,256 L1440,300 Z"/>
+        <path class="bg-mtn-rim" d="M0,300 L90,238 L210,266 L330,232 L450,254 L580,234 L710,262 L840,238 L980,264 L1110,240 L1250,262 L1380,242 L1440,256"/>
+      </g>
+      </g>
+    </svg>
+  </div>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="nav" id="top">
+    <div class="nav-inner">
+      <a class="nav-brand" href="#top" aria-label="Home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg class="brand-cube" viewBox="0 0 32 32">
+            <path class="brand-face brand-face-top" d="M16 3 L27 9.4 L16 15.8 L5 9.4 Z"/>
+            <path class="brand-face brand-face-left" d="M5 9.4 L16 15.8 L16 28.5 L5 22.1 Z"/>
+            <path class="brand-face brand-face-right" d="M27 9.4 L16 15.8 L16 28.5 L27 22.1 Z"/>
+            <path class="brand-edge" d="M16 3 L27 9.4 L27 22.1 L16 28.5 L5 22.1 L5 9.4 Z M5 9.4 L16 15.8 L27 9.4 M16 15.8 L16 28.5"/>
+            <rect class="brand-token" x="13" y="7" width="6" height="6" rx="1" transform="rotate(30 16 10)"/>
+          </svg>
+        </span>
+        <span class="brand-name">Niladri&nbsp;Dutt</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#about">Bio</a>
+        <a href="#news">News</a>
+        <a href="#publications">Publications</a>
+        <a href="#service">Service</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="about">
+      <div class="hero-grid">
+        <div class="hero-photo">
+          <figure class="profile-visual">
+            <div class="profile-media">
+              <img src="/assets/img/prof_pic.jpg" alt="Portrait of Niladri Shekhar Dutt" width="380" height="440" />
+              <span class="profile-glass" aria-hidden="true"></span>
+              <span class="profile-scan" aria-hidden="true"></span>
+            </div>
+            <span class="profile-corner profile-corner-tl" aria-hidden="true"></span>
+            <span class="profile-corner profile-corner-tr" aria-hidden="true"></span>
+            <span class="profile-corner profile-corner-bl" aria-hidden="true"></span>
+            <span class="profile-corner profile-corner-br" aria-hidden="true"></span>
+            <figcaption class="profile-readout"><span aria-hidden="true"></span>RGB / VIEW 01</figcaption>
+          </figure>
+          <figure class="tokenviz" aria-hidden="true">
+            <svg viewBox="0 0 220 244" xmlns="http://www.w3.org/2000/svg" fill="none">
+              <defs>
+                <clipPath id="tvImgClip"><rect x="82" y="4" width="56" height="48" rx="7"/></clipPath>
+                <linearGradient id="tvArrowGradient" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="#5eb8ff"/>
+                  <stop offset="100%" stop-color="#7adfc8"/>
+                </linearGradient>
+                <linearGradient id="tvEncoderFace" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#172233"/>
+                  <stop offset="100%" stop-color="#101722"/>
+                </linearGradient>
+                <marker id="tvArrowHead" viewBox="0 0 10 10" markerWidth="7" markerHeight="7"
+                        refX="8.4" refY="5" orient="auto" markerUnits="userSpaceOnUse">
+                  <path d="M1 1.2 L8.8 5 L1 8.8 L3.1 5 Z" fill="#7adfc8"/>
+                </marker>
+              </defs>
+
+              <!-- image plane, split into patches -->
+              <path class="tv-source-depth" d="M138 4 L143 9 V57 L138 52 Z M82 52 H138 L143 57 H87 Z"/>
+              <image class="tv-photo" href="/assets/img/prof_pic.jpg" x="82" y="4" width="56" height="48"
+                     clip-path="url(#tvImgClip)" preserveAspectRatio="xMidYMid slice"/>
+              <g class="tv-grid">
+                <line x1="100.7" y1="4" x2="100.7" y2="52"/>
+                <line x1="119.3" y1="4" x2="119.3" y2="52"/>
+                <line x1="82" y1="20" x2="138" y2="20"/>
+                <line x1="82" y1="36" x2="138" y2="36"/>
+              </g>
+              <rect class="tv-frame" x="82" y="4" width="56" height="48" rx="7"/>
+
+              <!-- precise flow: patchify + embed -->
+              <path class="tv-arrow-rail" d="M110 58 C110 67 110 74 110 84" marker-end="url(#tvArrowHead)"/>
+              <path class="tv-arrow-flow" d="M110 58 C110 67 110 74 110 82"/>
+
+              <!-- nine dimensional patch tokens -->
+              <g class="tv-cube tv-cube-1"><path class="tv-cube-top" d="M0 3 L4 0 H16 L12 3 Z"/><rect class="tv-cube-front" x="0" y="3" width="12" height="12" rx="1.6"/><path class="tv-cube-side" d="M12 3 L16 0 V12 L12 15 Z"/></g>
+              <g class="tv-cube tv-cube-2"><path class="tv-cube-top" d="M0 3 L4 0 H16 L12 3 Z"/><rect class="tv-cube-front" x="0" y="3" width="12" height="12" rx="1.6"/><path class="tv-cube-side" d="M12 3 L16 0 V12 L12 15 Z"/></g>
+              <g class="tv-cube tv-cube-3"><path class="tv-cube-top" d="M0 3 L4 0 H16 L12 3 Z"/><rect class="tv-cube-front" x="0" y="3" width="12" height="12" rx="1.6"/><path class="tv-cube-side" d="M12 3 L16 0 V12 L12 15 Z"/></g>
+              <g class="tv-cube tv-cube-4"><path class="tv-cube-top" d="M0 3 L4 0 H16 L12 3 Z"/><rect class="tv-cube-front" x="0" y="3" width="12" height="12" rx="1.6"/><path class="tv-cube-side" d="M12 3 L16 0 V12 L12 15 Z"/></g>
+              <g class="tv-cube tv-cube-5"><path class="tv-cube-top" d="M0 3 L4 0 H16 L12 3 Z"/><rect class="tv-cube-front" x="0" y="3" width="12" height="12" rx="1.6"/><path class="tv-cube-side" d="M12 3 L16 0 V12 L12 15 Z"/></g>
+              <g class="tv-cube tv-cube-6"><path class="tv-cube-top" d="M0 3 L4 0 H16 L12 3 Z"/><rect class="tv-cube-front" x="0" y="3" width="12" height="12" rx="1.6"/><path class="tv-cube-side" d="M12 3 L16 0 V12 L12 15 Z"/></g>
+              <g class="tv-cube tv-cube-7"><path class="tv-cube-top" d="M0 3 L4 0 H16 L12 3 Z"/><rect class="tv-cube-front" x="0" y="3" width="12" height="12" rx="1.6"/><path class="tv-cube-side" d="M12 3 L16 0 V12 L12 15 Z"/></g>
+              <g class="tv-cube tv-cube-8"><path class="tv-cube-top" d="M0 3 L4 0 H16 L12 3 Z"/><rect class="tv-cube-front" x="0" y="3" width="12" height="12" rx="1.6"/><path class="tv-cube-side" d="M12 3 L16 0 V12 L12 15 Z"/></g>
+              <g class="tv-cube tv-cube-9"><path class="tv-cube-top" d="M0 3 L4 0 H16 L12 3 Z"/><rect class="tv-cube-front" x="0" y="3" width="12" height="12" rx="1.6"/><path class="tv-cube-side" d="M12 3 L16 0 V12 L12 15 Z"/></g>
+              <path class="tv-arrow-rail" d="M110 113 C110 123 110 131 110 139" marker-end="url(#tvArrowHead)"/>
+              <path class="tv-arrow-flow tv-arrow-flow-2" d="M110 113 C110 122 110 129 110 137"/>
+
+              <!-- stacked transformer encoder with visible internal structure -->
+              <g class="tv-encoder">
+                <rect class="tv-encoder-back tv-encoder-back-2" x="37" y="143" width="158" height="86" rx="11"/>
+                <rect class="tv-encoder-back tv-encoder-back-1" x="31" y="149" width="162" height="86" rx="11"/>
+                <rect class="tv-encoder-face" x="25" y="155" width="166" height="82" rx="11"/>
+                <line class="tv-encoder-rule" x1="25" y1="172" x2="191" y2="172"/>
+                <g class="tv-encoder-ports">
+                  <rect x="42" y="162" width="7" height="4" rx="1"/><rect x="54" y="162" width="7" height="4" rx="1"/>
+                  <rect x="66" y="162" width="7" height="4" rx="1"/><rect x="78" y="162" width="7" height="4" rx="1"/>
+                  <rect x="90" y="162" width="7" height="4" rx="1"/><rect x="102" y="162" width="7" height="4" rx="1"/>
+                  <rect x="114" y="162" width="7" height="4" rx="1"/><rect x="126" y="162" width="7" height="4" rx="1"/>
+                  <rect x="138" y="162" width="7" height="4" rx="1"/><rect x="150" y="162" width="7" height="4" rx="1"/>
+                  <rect x="162" y="162" width="7" height="4" rx="1"/>
+                </g>
+
+                <path class="tv-residual" d="M39 181 V225 M39 190 H48 M39 216 H48"/>
+                <g class="tv-add-node"><circle cx="39" cy="201" r="4"/><path d="M36.7 201 H41.3 M39 198.7 V203.3"/></g>
+                <g class="tv-add-node"><circle cx="39" cy="227" r="4"/><path d="M36.7 227 H41.3 M39 224.7 V229.3"/></g>
+
+                <rect class="tv-norm" x="49" y="180" width="21" height="16" rx="4"/>
+                <path class="tv-norm-glyph" d="M54 185 H65 M54 188 H62 M54 191 H66"/>
+                <rect class="tv-module tv-module-attn" x="75" y="180" width="102" height="16" rx="4"/>
+
+                <rect class="tv-norm" x="49" y="206" width="21" height="16" rx="4"/>
+                <path class="tv-norm-glyph" d="M54 211 H65 M54 214 H62 M54 217 H66"/>
+                <rect class="tv-module tv-module-mlp" x="75" y="206" width="102" height="16" rx="4"/>
+
+                <g class="tv-attn-glyph">
+                  <path d="M87 184 L104 192 M87 192 L104 184 M87 188 H104"/>
+                  <circle cx="87" cy="184" r="1.5"/><circle cx="87" cy="188" r="1.5"/><circle cx="87" cy="192" r="1.5"/>
+                  <circle cx="104" cy="184" r="1.5"/><circle cx="104" cy="188" r="1.5"/><circle cx="104" cy="192" r="1.5"/>
+                  <path d="M115 184 L132 192 M115 192 L132 184 M115 188 H132"/>
+                  <circle cx="115" cy="184" r="1.5"/><circle cx="115" cy="188" r="1.5"/><circle cx="115" cy="192" r="1.5"/>
+                  <circle cx="132" cy="184" r="1.5"/><circle cx="132" cy="188" r="1.5"/><circle cx="132" cy="192" r="1.5"/>
+                  <path d="M143 184 L160 192 M143 192 L160 184 M143 188 H160"/>
+                  <circle cx="143" cy="184" r="1.5"/><circle cx="143" cy="188" r="1.5"/><circle cx="143" cy="192" r="1.5"/>
+                  <circle cx="160" cy="184" r="1.5"/><circle cx="160" cy="188" r="1.5"/><circle cx="160" cy="192" r="1.5"/>
+                </g>
+                <g class="tv-mlp-glyph">
+                  <path d="M88 214 H101 M108 211 V217 M116 209 V219 M124 211 V217 M131 214 H145 M152 211 V217 M160 214 H166"/>
+                </g>
+              </g>
+            </svg>
+          </figure>
+        </div>
+        <div class="hero-text">
+          <h1 class="name">Niladri Shekhar Dutt</h1>
+          <p class="lede">
+            I'm a second-year <a href="https://ellis.eu/phd-postdoc">ELLIS</a> PhD candidate (start: Oct'24) at
+            <a href="https://www.ucl.ac.uk/">University College London (UCL)</a>, sponsored by
+            <a href="https://research.adobe.com/">Adobe Research</a>. I'm advised by
+            <a href="http://www0.cs.ucl.ac.uk/staff/n.mitra/">Niloy Mitra</a> (UCL) and
+            <a href="https://www.duygu-ceylan.com/">Duygu Ceylan</a> (Adobe). I'm currently interning again as a
+            Research Scientist at Adobe Research with <a href="https://research.adobe.com/person/jakub-fiser/">Jakub Fiser</a>
+            on video generation.
+          </p>
+          <p class="lede lede-research">
+            My research studies <em>visual representation</em> and <em>multimodal learning</em> — how the visual world should be represented in tokens, if generative vision models represent structured plans,
+            and whether explicit structured intermediate representations improve compositional generalization
+            in foundation models.
+          </p>
+          <p class="past">
+            <span class="past-label">Previously</span>
+            Research Scientist Intern at <a href="https://research.adobe.com/">Adobe</a>
+            (with <a href="https://xuelin-chen.github.io/">Xuelin Chen</a>) ·
+            Research Intern at <a href="https://www.nvidia.com/en-us/">NVIDIA</a> ·
+            Visiting Student at <a href="https://www.berkeley.edu/">UC Berkeley</a> ·
+            Research Engineer at <a href="https://techcrunch.com/2025/12/19/netflix-acquires-gaming-avatar-maker-ready-player-me/">Ready Player Me</a>
+            (acquired by <a href="https://www.netflix.com">Netflix</a>) ·
+            Founding Engineer at NFTPort (raised $26M, now <a href="https://galadriel.com/">Galadriel</a>)
+          </p>
+
+          <p class="contact-line">
+            <span class="past-label">Contact</span>
+            <a class="email-obf" data-user="niladrishekhardutt" data-domain="gmail.com" href="#" aria-label="Email">niladrishekhardutt<span class="obf"> [at] </span>gmail<span class="obf"> [dot] </span>com</a>
+          </p>
+
+          <div class="links" aria-label="Profiles and links">
+            <a class="btn js-email" data-user="niladrishekhardutt" data-domain="gmail.com" href="#">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+              Email
+            </a>
+            <a class="btn" href="https://scholar.google.com/citations?user=27Y97dgAAAAJ">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2 1 9l11 7 9-5.727V17h2V9L12 2z"/><path d="M5 13.18v3.998l7 3.82 7-3.82V13.18l-7 3.82-7-3.82z" fill="currentColor" opacity=".7"/></svg>
+              Scholar
+            </a>
+            <a class="btn" href="https://github.com/niladridutt">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.1-.75.08-.73.08-.73 1.21.09 1.85 1.25 1.85 1.25 1.08 1.84 2.83 1.31 3.52 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.34-5.47-5.95 0-1.31.47-2.39 1.24-3.23-.13-.3-.54-1.53.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.65.25 2.88.12 3.18.77.84 1.24 1.92 1.24 3.23 0 4.62-2.81 5.64-5.49 5.94.43.37.82 1.1.82 2.22v3.29c0 .32.22.7.83.58C20.56 22.29 24 17.79 24 12.5 24 5.87 18.63.5 12 .5z"/></svg>
+              GitHub
+            </a>
+            <a class="btn" href="https://www.linkedin.com/in/niladridutt">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg>
+              LinkedIn
+            </a>
+            <a class="btn" href="https://x.com/niladridutt">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.22-6.82-5.97 6.82H1.66l7.73-8.83L1.24 2.25h6.83l4.71 6.23 5.46-6.23zm-1.16 17.52h1.83L7.01 4.13H5.05l12.03 15.64z"/></svg>
+              Twitter
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ NEWS ============ -->
+    <section class="news reveal" id="news">
+      <div class="section-head">
+        <h2 class="section-eyebrow">News</h2>
+        <span class="scroll-hint">scroll ↓</span>
+      </div>
+      <ol class="news-list" tabindex="0" aria-label="Recent news, scrollable">
+        <li class="has-tag">
+          <span class="news-date">Nov 2026</span>
+          <span class="news-body">Co-organizing the <a href="https://www.bmva.org/meetings/26-11-18-WorldModels.html">BMVA Symposium on World Models</a>.</span>
+          <span class="tag tag-soon">upcoming</span>
+        </li>
+        <li>
+          <span class="news-date">Jul 2026</span>
+          <span class="news-body">Invited <a href="https://www.youtube.com/watch?v=e1-japOSdm4">talk</a> at Voxel51 &amp; Imperial College London.</span>
+        </li>
+        <li>
+          <span class="news-date">Feb 2026</span>
+          <span class="news-body">Invited talk at the <a href="https://gradientspaces.stanford.edu/">Stanford Gradient Spaces Lab</a>.</span>
+        </li>
+        <li>
+          <span class="news-date">Jan 2026</span>
+          <span class="news-body">Co-organizing the <a href="https://sites.google.com/stanford.edu/visual-concepts-workshops/home">3rd Workshop on Visual Concepts</a> @ CVPR 2026.</span>
+        </li>
+        <li>
+          <span class="news-date">Apr 2025</span>
+          <span class="news-body">Selected for the Google Gemini Academic Program.</span>
+        </li>
+        <li>
+          <span class="news-date">Apr 2025</span>
+          <span class="news-body">Co-organizing the <a href="https://londongenai.github.io/">London GenAI Forum '25</a>.</span>
+        </li>
+        <li>
+          <span class="news-date">Mar 2025</span>
+          <span class="news-body">Awarded the <a href="https://www.meshy.ai/blog/fellowship-2025">Meshy AI Fellowship 2025</a> Finalist prize.</span>
+        </li>
+        <li>
+          <span class="news-date">Oct 2024</span>
+          <span class="news-body">Presented my research at <a href="https://www.turing.ac.uk/">The Alan Turing Institute</a> PhD day.</span>
+        </li>
+        <li>
+          <span class="news-date">Oct 2024</span>
+          <span class="news-body">Started my PhD at UCL 🥳</span>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ============ PUBLICATIONS ============ -->
+    <section class="pubs" id="publications">
+      <h2 class="section-eyebrow">Publications</h2>
+      <ol class="pub-list">
+
+        <!-- Paper template: duplicate a <li class="pub reveal"> block to add a new paper. -->
+        <li class="pub reveal">
+          <a class="pub-thumb" href="https://lost3d.github.io/"><img src="/assets/img/pub/lost.png" alt="LoST preview" loading="lazy" /></a>
+          <div class="pub-meta">
+            <span class="venue">CVPR 2026</span>
+            <h3 class="pub-title"><a href="https://lost3d.github.io/">LoST: Level of Semantics Tokenization for 3D Shapes</a></h3>
+            <p class="authors"><b>Niladri Shekhar Dutt</b>, Zifan Shi, Paul Guerrero, Chun-Hao Paul Huang, Duygu Ceylan, Niloy J. Mitra, Xuelin Chen</p>
+            <p class="pub-links">
+              <a href="https://lost3d.github.io/">Project</a>
+              <a href="https://arxiv.org/abs/2603.17995">arXiv</a>
+              <a href="https://github.com/niladridutt/LoST">Code</a>
+            </p>
+          </div>
+        </li>
+
+        <li class="pub reveal">
+          <a class="pub-thumb" href="https://yilinliu77.github.io/brepler.github.io/"><img src="/assets/img/pub/brepler.jpg" alt="B-repLer preview" loading="lazy" /></a>
+          <div class="pub-meta">
+            <span class="venue">SIGGRAPH 2026</span>
+            <h3 class="pub-title"><a href="https://yilinliu77.github.io/brepler.github.io/">B-repLer: Semantic B-rep Latent Editor using Large Language Models</a></h3>
+            <p class="authors">Yilin Liu, <b>Niladri Shekhar Dutt</b>, Changjian Li, Niloy J. Mitra</p>
+            <p class="pub-links">
+              <a href="https://yilinliu77.github.io/brepler.github.io/">Project</a>
+              <a href="https://arxiv.org/abs/2508.10201">arXiv</a>
+              <a href="https://github.com/yilinliu77/Brepler">Code</a>
+            </p>
+          </div>
+        </li>
+
+        <li class="pub reveal">
+          <a class="pub-thumb" href="https://motionfields.github.io/"><img src="/assets/img/pub/smf.png" alt="SMF preview" loading="lazy" /></a>
+          <div class="pub-meta">
+            <span class="venue">SIGGRAPH Asia 2025 · ACM Transactions on Graphics</span>
+            <h3 class="pub-title"><a href="https://motionfields.github.io/">SMF: Template-free and Rig-free Animation Transfer using Kinetic Codes</a></h3>
+            <p class="authors">Sanjeev Muralikrishnan, <b>Niladri Shekhar Dutt</b>, Niloy J. Mitra <span class="eq-note">· equal first-author</span></p>
+            <p class="pub-links">
+              <a href="https://motionfields.github.io/">Project</a>
+              <a href="https://arxiv.org/abs/2504.04831">arXiv</a>
+              <a href="https://github.com/sanjeevmk/SMF">Code</a>
+            </p>
+          </div>
+        </li>
+
+        <li class="pub reveal">
+          <a class="pub-thumb" href="https://monetgpt.github.io/"><img src="/assets/img/pub/monetGPT.jpg" alt="MonetGPT preview" loading="lazy" /></a>
+          <div class="pub-meta">
+            <span class="venue">SIGGRAPH 2025 · ACM Transactions on Graphics</span>
+            <h3 class="pub-title"><a href="https://monetgpt.github.io/">MonetGPT: Solving Puzzles Enhances MLLMs' Image Retouching Skills</a></h3>
+            <p class="authors"><b>Niladri Shekhar Dutt</b>, Duygu Ceylan, Niloy J. Mitra</p>
+            <p class="pub-links">
+              <a href="https://monetgpt.github.io/">Project</a>
+              <a href="https://arxiv.org/abs/2505.06176">arXiv</a>
+              <a href="https://github.com/niladridutt/monetGPT">Code</a>
+              <a href="https://research.adobe.com/news/adobe-researchers-use-puzzles-to-teach-an-ai-model-to-retouch-photos">Press</a>
+            </p>
+          </div>
+        </li>
+
+        <li class="pub reveal">
+          <a class="pub-thumb" href="https://flairgpt.github.io/"><img src="/assets/img/pub/flairgpt.gif" alt="FlairGPT preview" loading="lazy" /></a>
+          <div class="pub-meta">
+            <span class="venue">Eurographics 2025 · CGF</span>
+            <h3 class="pub-title"><a href="https://flairgpt.github.io/">FlairGPT: Repurposing LLMs for Interior Designs</a></h3>
+            <p class="authors">Gabrielle Littlefair, <b>Niladri Shekhar Dutt</b>, Niloy J. Mitra</p>
+            <p class="pub-links">
+              <a href="https://flairgpt.github.io/">Project</a>
+              <a href="https://arxiv.org/abs/2501.04648">arXiv</a>
+              <a href="https://github.com/gabriellelittle1/FlairGPT">Code</a>
+            </p>
+          </div>
+        </li>
+
+        <li class="pub reveal">
+          <a class="pub-thumb" href="https://temporaljacobians.github.io/"><img src="/assets/img/pub/trj.jpg" alt="Temporal Residual Jacobians preview" loading="lazy" /></a>
+          <div class="pub-meta">
+            <span class="venue">ECCV 2024</span>
+            <h3 class="pub-title"><a href="https://temporaljacobians.github.io/">Temporal Residual Jacobians for Rig-Free Motion Transfer</a></h3>
+            <p class="authors">Sanjeev Muralikrishnan, <b>Niladri Shekhar Dutt</b>, Siddhartha Chaudhuri, Noam Aigerman, Vladimir Kim, Matthew Fisher, Niloy J. Mitra</p>
+            <p class="pub-links">
+              <a href="https://temporaljacobians.github.io/">Project</a>
+              <a href="https://arxiv.org/abs/2407.14958">arXiv</a>
+              <a href="https://github.com/sanjeevmk/trj">Code</a>
+            </p>
+          </div>
+        </li>
+
+        <li class="pub reveal">
+          <a class="pub-thumb" href="https://diff3f.github.io/"><img src="/assets/img/pub/diff3f.jpg" alt="Diff3F preview" loading="lazy" /></a>
+          <div class="pub-meta">
+            <span class="venue">CVPR 2024</span>
+            <h3 class="pub-title"><a href="https://diff3f.github.io/">Diffusion 3D Features (Diff3F): Decorating Untextured Shapes with Distilled Semantic Features</a></h3>
+            <p class="authors"><b>Niladri Shekhar Dutt</b>, Sanjeev Muralikrishnan, Niloy J. Mitra</p>
+            <p class="pub-links">
+              <a href="https://diff3f.github.io/">Project</a>
+              <a href="https://arxiv.org/abs/2311.17024">arXiv</a>
+              <a href="https://github.com/niladridutt/Diffusion-3D-Features">Code</a>
+            </p>
+          </div>
+        </li>
+
+        <li class="pub reveal">
+          <a class="pub-thumb" href="https://proteusnerf.github.io/"><img src="/assets/img/pub/proteus.gif" alt="ProteusNeRF preview" loading="lazy" /></a>
+          <div class="pub-meta">
+            <span class="venue">ACM SIGGRAPH Symposium on Interactive 3D Graphics and Games (I3D) 2024</span>
+            <h3 class="pub-title"><a href="https://proteusnerf.github.io/">ProteusNeRF: Fast Lightweight NeRF Editing using 3D-Aware Image Context</a></h3>
+            <p class="authors">Binglun Wang, <b>Niladri Shekhar Dutt</b>, Niloy J. Mitra</p>
+            <p class="pub-links">
+              <a href="https://proteusnerf.github.io/">Project</a>
+              <a href="https://arxiv.org/abs/2310.09965">arXiv</a>
+              <a href="https://github.com/BinglunWang/ProteusNeRF">Code</a>
+            </p>
+          </div>
+        </li>
+
+      </ol>
+    </section>
+
+    <!-- ============ SERVICE ============ -->
+    <section class="service reveal" id="service">
+      <h2 class="section-eyebrow">Service</h2>
+      <p class="service-intro">I review papers for the following conferences and journals:</p>
+      <ul class="service-list">
+        <li><span class="svc-cat">Computer Graphics</span> SIGGRAPH · SIGGRAPH Asia · ACM Transactions on Graphics · Computer Graphics Forum</li>
+        <li><span class="svc-cat">Computer Vision</span> CVPR · ICCV</li>
+        <li><span class="svc-cat">Machine Learning</span> NeurIPS · ICLR · ICML · AAAI</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year">2026</span> Niladri Shekhar Dutt</p>
+  </footer>
+
+  <script src="/js/main.js?v=10" defer></script>
+</body>
+</html>

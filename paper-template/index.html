@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ===== EDIT: title & description ===== -->
+  <title>Paper Title — Niladri Shekhar Dutt</title>
+  <meta name="description" content="One-line summary of the paper." />
+
+  <!-- Open Graph (edit url + image) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Paper Title" />
+  <meta property="og:description" content="One-line summary of the paper." />
+  <meta property="og:url" content="https://niladridutt.com/PROJECT-SLUG/" />
+  <meta property="og:image" content="https://niladridutt.com/PROJECT-SLUG/teaser.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Favicons resolve from site root -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="alternate icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Inter:wght@400;450;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Reuse the site's design system -->
+  <link rel="stylesheet" href="/css/style.css" />
+  <style>
+    .paper { max-width: 860px; margin: 0 auto; padding: 60px 24px 80px; }
+    .paper h1 { font-family: var(--font-serif); font-weight: 500; font-size: clamp(28px, 5vw, 40px);
+                line-height: 1.12; letter-spacing: -.01em; margin: 0 0 16px; text-align: center; }
+    .paper .authors { text-align: center; font-size: 16px; margin: 0 auto 6px; max-width: 60ch; }
+    .paper .affil { text-align: center; color: var(--faint); font-size: 14px; margin: 0 0 22px; }
+    .paper .links { justify-content: center; margin-bottom: 34px; }
+    .teaser { width: 100%; border-radius: var(--radius); border: 1px solid var(--border-2);
+              display: block; margin: 0 auto 36px; }
+    .paper h2 { font-family: var(--font-serif); font-weight: 500; font-size: 26px; margin: 36px 0 12px; }
+    .paper p { color: var(--text); }
+    .abstract { color: var(--muted); font-size: 16.5px; }
+    .cite { background: var(--panel); border: 1px solid var(--border); border-radius: 10px;
+            padding: 16px 18px; overflow-x: auto; font-family: var(--font-mono); font-size: 13px;
+            color: var(--muted); white-space: pre; }
+    .home-link { display: inline-block; margin-bottom: 20px; font-family: var(--font-mono); font-size: 13px; }
+  </style>
+</head>
+<body>
+  <div class="paper">
+    <a class="home-link" href="/">← niladridutt.com</a>
+
+    <!-- ===== EDIT everything below ===== -->
+    <h1>Paper Title Goes Here</h1>
+    <p class="authors">
+      <b>Niladri Shekhar Dutt</b>, Co-author One, Co-author Two
+    </p>
+    <p class="affil">University College London · Adobe Research · VENUE YEAR</p>
+
+    <div class="links">
+      <a class="btn" href="#">arXiv</a>
+      <a class="btn" href="#">Code</a>
+      <a class="btn" href="#">PDF</a>
+    </div>
+
+    <!-- Put teaser.jpg (or .mp4/.gif) in this same folder -->
+    <img class="teaser" src="teaser.jpg" alt="Teaser figure" />
+
+    <h2>Abstract</h2>
+    <p class="abstract">
+      Replace with the paper abstract.
+    </p>
+
+    <h2>BibTeX</h2>
+    <div class="cite">@article{key2026,
+  title   = {Paper Title Goes Here},
+  author  = {Dutt, Niladri Shekhar and Others},
+  journal = {Venue},
+  year    = {2026}
+}</div>
+  </div>
+
+  <script src="/js/main.js" defer></script>
+</body>
+</html>
