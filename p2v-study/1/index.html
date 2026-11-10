@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Video comparison study</title>
+<link rel="stylesheet" href="../style.css?v=1761f9a3">
+</head>
+<body>
+<section id="intro" class="screen">
+  <div class="card narrow">
+    <h1>Which video follows the description?</h1>
+    <p>Thank you for taking part. We are testing methods that generate a video from a written description of a
+      scene. In each comparison you see <b>two videos, A and B</b>, made from the <b>same description</b> by two
+      different methods. Your task is to tell us which one does what the description asks.</p>
+
+    <h2>What you will see</h2>
+    <ul>
+      <li><b>The two videos</b>, side by side. They are about 5 seconds long, play together and replay
+        automatically. Use <i>Pause</i>, <i>Restart</i>, <i>½ speed</i> and the slider to look closely.</li>
+      <li><b>A short description</b> of the scene, the list of things in it and what each one does, the camera, and
+        the full detailed description both videos were made from.</li>
+      <li><b>The critical instruction</b>, highlighted in yellow: the one thing the shot is really about, for example
+        a direction of motion, a turn, an effect, an object hidden and revealed, a collision, or a camera move.
+        When the camera moves, the camera instruction is highlighted in blue.</li>
+    </ul>
+
+    <h2>The three questions</h2>
+    <ol>
+      <li><b>Which video follows the description better?</b> The right things, in the right places, doing what the
+        description says, in the right order.</li>
+      <li><b>Which video looks more realistic and natural?</b> Believable motion, shapes that stay solid, physics
+        that make sense, a clean image.</li>
+      <li><b>Which video follows the critical instruction better?</b> Judge only the highlighted instruction.</li>
+    </ol>
+
+    <h2>Please keep in mind</h2>
+    <ul>
+      <li>Things the description does not mention (extra objects, the background, colours of minor details) do not
+        count for or against a video.</li>
+      <li>Both videos may be imperfect. Choose the one that is <b>closer</b>; there is no "same" option.</li>
+      <li>Answers unlock once both videos have played to the end once. Watch them several times if you need to.</li>
+      <li>Please use a laptop or desktop screen, in a quiet moment. There are <span id="count">30</span>
+        comparisons, about <span id="est">20</span> minutes. Your progress is saved in this browser, so you can
+        take a break and come back.</li>
+    </ul>
+
+    <h2>An example</h2>
+    <div class="example">
+      <p class="muted">This example is not part of the study, and neither video was made by the method being
+        tested.</p>
+      <div class="prompt" id="exprompt"></div>
+      <div class="videos">
+        <figure><figcaption>A</figcaption><video id="exa" muted playsinline autoplay loop></video></figure>
+        <figure><figcaption>B</figcaption><video id="exb" muted playsinline autoplay loop></video></figure>
+      </div>
+      <div class="critical"><div class="label">Critical instruction</div><p id="exkey"></p></div>
+      <p id="exanswer"></p>
+    </div>
+
+    <label class="pid">Your name (or the code you were given) <input id="pid" autocomplete="name"></label>
+    <button id="start" class="primary">Start</button>
+  </div>
+</section>
+
+<section id="trial" class="screen hidden">
+  <header class="bar">
+    <span id="progress"></span>
+    <div class="progressbar"><div id="progfill"></div></div>
+  </header>
+  <div class="layout">
+    <div class="left">
+      <div class="videos">
+        <figure><figcaption>A</figcaption><video id="va" muted playsinline preload="auto"></video></figure>
+        <figure><figcaption>B</figcaption><video id="vb" muted playsinline preload="auto"></video></figure>
+      </div>
+      <div class="controls">
+        <button id="play">Pause</button>
+        <button id="restart">Restart</button>
+        <button id="slow">½ speed</button>
+        <input id="scrub" type="range" min="0" max="5.0625" step="0.0625" value="0" aria-label="position">
+      </div>
+      <div class="check" id="check"></div>
+      <div class="desc" id="desc"></div>
+    </div>
+    <aside class="right">
+      <div class="questions">
+        <div class="q">
+          <p><b>1.</b> Which video follows the description better?</p>
+          <span><button class="ans" data-q="q1" data-v="A">A</button><button class="ans" data-q="q1" data-v="B">B</button></span>
+        </div>
+        <div class="q">
+          <p><b>2.</b> Which video looks more realistic and natural?</p>
+          <span><button class="ans" data-q="q2" data-v="A">A</button><button class="ans" data-q="q2" data-v="B">B</button></span>
+        </div>
+        <div class="critical">
+          <div class="label">Critical instruction</div>
+          <p id="key"></p>
+          <div class="q">
+            <p><b>3.</b> Which video follows the critical instruction better?</p>
+            <span><button class="ans" data-q="q3" data-v="A">A</button><button class="ans" data-q="q3" data-v="B">B</button></span>
+          </div>
+        </div>
+        <p id="watchnote" class="note">Watch both videos to the end once to answer.</p>
+        <button id="next" class="primary" disabled>Next</button>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<section id="done" class="screen hidden">
+  <div class="card narrow">
+    <h1>Thank you!</h1>
+    <p id="sent"></p>
+    <p class="muted">You can also keep a copy of your answers, or send it to the organiser if asked to:</p>
+    <button id="dljson" class="primary">Download answers (JSON)</button>
+    <button id="dlcsv">Download answers (CSV)</button>
+  </div>
+</section>
+
+<script>window.STUDY_GROUP = {"id": 1, "baselines": ["agent_lcv", "vace21_flow"], "base": "../"};</script>
+<script src="../config.js?v=1761f9a3"></script>
+<script src="../data.js?v=1761f9a3"></script>
+<script src="../study.js?v=1761f9a3"></script>
+</body>
+</html>
