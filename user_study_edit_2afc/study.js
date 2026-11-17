@@ -175,7 +175,11 @@
   $("start").onclick = () => {
     const pid = $("pid").value.trim().replace(/[^\w.-]/g, "_");
     if (!pid) { $("pid").focus(); return; }
-    state = load(pid) || {pid, started: new Date().toISOString(), trials: makeTrials(pid), answers: {}, pos: 0};
+    // Saved progress from an older build (a different item list) is discarded, so a swapped item never comes back.
+    const itemsKey = S.items.map((x) => x.id).join(",");
+    const saved = load(pid);
+    state = (saved && saved.itemsKey === itemsKey && saved.trials.every((t) => S.items.some((x) => x.id === t.item)))
+      ? saved : {pid, itemsKey, started: new Date().toISOString(), trials: makeTrials(pid), answers: {}, pos: 0};
     save();
     $("exa").pause(); $("exb").pause(); $("exs").pause();
     $("intro").classList.add("hidden"); $("trial").classList.remove("hidden");
