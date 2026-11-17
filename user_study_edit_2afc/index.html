@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Video editing study</title>
+<link rel="stylesheet" href="style.css?v=cbdff1d1">
+</head>
+<body>
+<section id="intro" class="screen">
+  <div class="card narrow">
+    <h1>Which edit follows the instruction?</h1>
+    <p>Thank you for taking part. We are testing methods that <b>edit a real video</b> from a written instruction,
+      for example "the dog runs in from the right" or "the camera slowly zooms in". In each comparison you see the
+      <b>original video</b> and <b>two edited versions, A and B</b>, made from the <b>same instruction</b> by two
+      different methods. Your task is to tell us which edit does what the instruction asks.</p>
+
+    <h2>What you will see</h2>
+    <ul>
+      <li><b>The original video</b> (grey frame) and <b>the two edits</b>, A and B. They are about 5 seconds long,
+        play together and replay automatically. Use <i>Pause</i>, <i>Restart</i>, <i>½ speed</i> and the slider to
+        compare them moment by moment.</li>
+      <li><b>The edit instruction</b>, highlighted in yellow: the one change that was asked for.</li>
+    </ul>
+
+    <h2>The three questions</h2>
+    <ol>
+      <li><b>Which edit carries out the instruction better?</b> The requested change happens, to the right thing,
+        in the right direction, place, amount and timing. An edit that leaves the video as it was, changes the
+        wrong thing or does a different change has not followed the instruction, however clean it looks.</li>
+      <li><b>Which edit keeps everything else closer to the original?</b> The people, animals and objects keep
+        their look, the setting stays the same, and what was not asked to change moves as in the original.
+        Changes that follow from the edit (a place goes dark when the light leaves it; everything gets larger in
+        a zoom) are expected.</li>
+      <li><b>Which edit looks more realistic and natural?</b> Believable motion, shapes that stay solid, no
+        flicker, smearing or things appearing and disappearing.</li>
+    </ol>
+
+    <h2>Please keep in mind</h2>
+    <ul>
+      <li>Both edits may be imperfect. Choose the one that is <b>closer</b>; there is no "same" option.</li>
+      <li>Answers unlock once both edits have played to the end once. Watch them several times if you need to.</li>
+      <li>Please use a laptop or desktop screen. There are <span id="count">25</span> comparisons, about
+        <span id="est">20</span> minutes. Your progress is saved in this browser.</li>
+    </ul>
+
+    <h2>An example</h2>
+    <div class="example">
+      <p class="muted">This example is not part of the study, and neither edit was made by the method being tested.</p>
+      <div class="instr"><div class="label">Edit instruction</div><p id="exinstr"></p></div>
+      <div class="srcrow"><figure><figcaption>Original</figcaption><video id="exs" muted playsinline autoplay loop></video></figure><div></div></div>
+      <div class="videos">
+        <figure><figcaption>A</figcaption><video id="exa" muted playsinline autoplay loop></video></figure>
+        <figure><figcaption>B</figcaption><video id="exb" muted playsinline autoplay loop></video></figure>
+      </div>
+      <p id="exanswer"></p>
+    </div>
+
+    <label class="pid">Your name (or the code you were given) <input id="pid" autocomplete="name"></label>
+    <button id="start" class="primary">Start</button>
+  </div>
+</section>
+
+<section id="trial" class="screen hidden">
+  <header class="bar">
+    <span id="progress"></span>
+    <div class="progressbar"><div id="progfill"></div></div>
+  </header>
+  <div class="layout">
+    <div class="left">
+      <div class="srcrow">
+        <figure><figcaption>Original</figcaption><video id="vs" muted playsinline preload="auto"></video></figure>
+        <div class="instr"><div class="label">Edit instruction</div><p id="instr"></p><span class="cat" id="cat"></span></div>
+      </div>
+      <div class="videos">
+        <figure><figcaption>A</figcaption><video id="va" muted playsinline preload="auto"></video></figure>
+        <figure><figcaption>B</figcaption><video id="vb" muted playsinline preload="auto"></video></figure>
+      </div>
+      <div class="controls">
+        <button id="play">Pause</button>
+        <button id="restart">Restart</button>
+        <button id="slow">½ speed</button>
+        <input id="scrub" type="range" min="0" max="5.0625" step="0.0625" value="0" aria-label="position">
+      </div>
+    </div>
+    <aside class="right">
+      <div class="questions">
+        <div class="instr"><div class="label">Edit instruction</div><p id="instr2"></p></div>
+        <div class="q">
+          <p><b>1.</b> Which edit carries out the instruction better?</p>
+          <span><button class="ans" data-q="q1" data-v="A">A</button><button class="ans" data-q="q1" data-v="B">B</button></span>
+        </div>
+        <div class="q">
+          <p><b>2.</b> Which edit keeps everything else closer to the original?</p>
+          <span><button class="ans" data-q="q2" data-v="A">A</button><button class="ans" data-q="q2" data-v="B">B</button></span>
+        </div>
+        <div class="q">
+          <p><b>3.</b> Which edit looks more realistic and natural?</p>
+          <span><button class="ans" data-q="q3" data-v="A">A</button><button class="ans" data-q="q3" data-v="B">B</button></span>
+        </div>
+        <p id="watchnote" class="note">Watch both edits to the end once to answer.</p>
+        <button id="next" class="primary" disabled>Next</button>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<section id="done" class="screen hidden">
+  <div class="card narrow">
+    <h1>Thank you!</h1>
+    <p id="sent"></p>
+    <p class="muted">Please download and send a copy to us for our records.</p>
+    <button id="dljson" class="primary">Download answers (JSON)</button>
+    <button id="dlcsv">Download answers (CSV)</button>
+  </div>
+</section>
+
+<script src="config.js?v=cbdff1d1"></script>
+<script src="data.js?v=cbdff1d1"></script>
+<script src="study.js?v=cbdff1d1"></script>
+</body>
+</html>
