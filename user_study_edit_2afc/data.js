@@ -14,20 +14,20 @@ window.STUDY = {
 ],
 "items": [
 {
-"id": "stage-b__spot-off",
-"instruction": "The spotlight switches off at 2 s.",
+"id": "stage-b__spot-slides-left",
+"instruction": "The spotlight and its pool slide left, leaving the dancer in darkness.",
 "category": "light",
 "videos": {
-"c0974c3c12": "videos/stage-b__spot-off/c0974c3c12.mp4",
-"08b519ba56": "videos/stage-b__spot-off/08b519ba56.mp4",
-"be6a25b3ad": "videos/stage-b__spot-off/be6a25b3ad.mp4",
-"479e884106": "videos/stage-b__spot-off/479e884106.mp4"
+"9dcdae9075": "videos/stage-b__spot-slides-left/9dcdae9075.mp4",
+"14b7380927": "videos/stage-b__spot-slides-left/14b7380927.mp4",
+"d36bcb0d1d": "videos/stage-b__spot-slides-left/d36bcb0d1d.mp4",
+"703777f44e": "videos/stage-b__spot-slides-left/703777f44e.mp4"
 },
 "codes": {
-"source": "c0974c3c12",
-"ours": "08b519ba56",
-"lcv": "be6a25b3ad",
-"vace": "479e884106"
+"source": "9dcdae9075",
+"ours": "14b7380927",
+"lcv": "d36bcb0d1d",
+"vace": "703777f44e"
 }
 },
 {
